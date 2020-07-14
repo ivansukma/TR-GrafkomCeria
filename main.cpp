@@ -320,9 +320,8 @@ void display(void)
         glVertex3f(10.0, 48.0, -7.0);
         glVertex3f(10.0, 40.0, -7.0);
     glEnd();
-
-    glBegin(GL_POLYGON); //LCD depan
-        glColor3f(0.0f, 1.0f, 1.0f);
+    glBegin(GL_POLYGON); //LCD belakang
+        glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, 7.0);
         glVertex3f(-10.0, 48.0, 7.0);
         glVertex3f(10.0, 48.0, 7.0);
