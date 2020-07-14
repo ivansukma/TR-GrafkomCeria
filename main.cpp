@@ -280,6 +280,55 @@ void display(void)
     glVertex3f(-48, 35.0, 50);
     glVertex3f(-48, 35.0, -50);
     glEnd();
+
+    glBegin(GL_POLYGON); //LCD Atas
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON); //LCD bawah
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(10.0, 40.0, -7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 40.0, 7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON); //LCD kanan
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(10.0, 40.0, -7.0);
+        glVertex3f(10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON); //LCD kiri
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 40.0, 7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON); //LCD depan
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, -7.0);
+        glVertex3f(10.0, 40.0, -7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON); //LCD depan
+        glColor3f(0.0f, 1.0f, 1.0f);
+        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+    glEnd();
+
     glPopMatrix();
     glutSwapBuffers();
 }
