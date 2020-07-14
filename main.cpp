@@ -51,15 +51,58 @@ void init(void)
     glPointSize(20.0);
     glLineWidth(6.0f);
 }
-void display(void)
-{
-    if (is_depth)
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    else
-    glClear(GL_COLOR_BUFFER_BIT);
-    glPushMatrix();
-    glRotatef(xrot, 1, 0, 0);
-    glRotatef(yrot, 0, 1, 0);
+
+void interior(void){
+ glBegin(GL_QUADS);//kiri
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(-50.0, 0.0, 100.0);
+        glVertex3f(-50.0, 50.0, 100.0);
+        glVertex3f(-50.0, 50.0, -100.0);
+        glVertex3f(-50.0, 0.0, -100.0);
+    glEnd();
+
+    glBegin(GL_LINE_LOOP);//garis kiri
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-50.0, 0.0, 100.0);
+        glVertex3f(-50.0, 50.0, 100.0);
+        glVertex3f(-50.0, 50.0, -100.0);
+        glVertex3f(-50.0, 0.0, -100.0);
+    glEnd();
+
+    glBegin(GL_QUADS);//samping kanan
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(50.0, 0.0, 100.0);
+        glVertex3f(50.0, 50.0, 100.0);
+        glVertex3f(50.0, 50.0, -100.0);
+        glVertex3f(50.0, 0.0, -100.0);
+    glEnd();
+
+        glBegin(GL_LINE_LOOP);//garis samping kanan
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(50.0, 0.0, 100.0);
+        glVertex3f(50.0, 50.0, 100.0);
+        glVertex3f(50.0, 50.0, -100.0);
+        glVertex3f(50.0, 0.0, -100.0);
+    glEnd();
+
+
+    glBegin(GL_QUADS);//belakang
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(-50.0, 0.0, -100.0);
+        glVertex3f(-50.0, 50.0, -100.0);
+        glVertex3f(50.0, 50.0, -100.0);
+        glVertex3f(50.0, 0.0, -100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis belakang
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-50.0, 0.0, -100.0);
+        glVertex3f(-50.0, 50.0, -100.0);
+        glVertex3f(50.0, 50.0, -100.0);
+        glVertex3f(50.0, 0.0, -100.0);
+    glEnd();
+}
+
+void jalanrumah(void){
     glBegin(GL_QUADS);//Jalan halaman Rumah
         glColor3f(0.2f, 0.2f, 0.2f);
         glVertex3f(-200.0, -3.0, -200.0);
@@ -84,7 +127,10 @@ void display(void)
         glVertex3f(50.0, 50.0, 100.1);
            glVertex3f(50.0, 0.0, 100.1);
     glEnd();
-   glBegin(GL_TRIANGLES);//atap depan rumah
+}
+
+void atap(void){
+    glBegin(GL_TRIANGLES);//atap depan rumah
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(0.0, 100.0, 100.0);
         glVertex3f(50.0, 50.0, 100.0);
@@ -96,21 +142,7 @@ void display(void)
         glVertex3f(50.0, 50.0, 100.0);
         glVertex3f(-50.0, 50.0, 100.0);
     glEnd();
-    glBegin(GL_QUADS);//kiri
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(-50.0, 0.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(-50.0, 0.0, -100.0);
-    glEnd();
-    glBegin(GL_LINE_LOOP);//garis kiri
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-50.0, 0.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(-50.0, 0.0, -100.0);
-    glEnd();
-   glBegin(GL_QUADS);//atap  kiri
+     glBegin(GL_QUADS);//atap  kiri
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(-50.0, 50.0, -100.0);
         glVertex3f(0.0, 100.0, -100.0);
@@ -124,20 +156,6 @@ void display(void)
         glVertex3f(0.0, 100.0, 100.0);
         glVertex3f(-50.0, 50.0, 100.0);
     glEnd();
-    glBegin(GL_QUADS);//samping kanan
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(50.0, 0.0, 100.0);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis samping kanan
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(50.0, 0.0, 100.0);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
-    glEnd();
     glBegin(GL_QUADS);//atap samping kanan
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(50.0, 50.0, 100.0);
@@ -145,6 +163,7 @@ void display(void)
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
+
     glBegin(GL_LINE_LOOP);//garis atap samping kanan
         glColor3f(0.0f,0.0f,0.0f);
         glVertex3f(50.0, 50.0, 100.0);
@@ -152,22 +171,7 @@ void display(void)
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
-
-    glBegin(GL_QUADS);//belakang
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(-50.0, 0.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
-    glEnd();
-    glBegin(GL_LINE_LOOP);//garis belakang
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-50.0, 0.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
-    glEnd();
-   glBegin(GL_TRIANGLES);//atap belakang
+    glBegin(GL_TRIANGLES);//atap belakang
          glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(-50.0, 50.0, -100.0);
@@ -179,11 +183,10 @@ void display(void)
         glVertex3f(-50.0, 50.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
-    /*
-        ISI KAMPUS
+}
 
-    */
-        glBegin(GL_QUADS);//Papan Tulis
+void papantulis(void){
+glBegin(GL_QUADS);//Papan Tulis
         glColor3f(1.0f,1.0f,1.0f);
         glVertex3f(-30, 10.0, -98);
         glVertex3f(-30, 40.0, -98);
@@ -197,7 +200,27 @@ void display(void)
         glVertex3f(30, 40.0, -98);
         glVertex3f(30, 10.0, -98);
     glEnd();
-    glBegin(GL_QUADS); //Pijakan Kaki (belakang)
+}
+
+void redcarpet(void){
+
+glBegin(GL_QUADS);// RED CARPET
+        glColor3f(0.973f,0.0f,0.0f);
+        glVertex3f(-40, -1.0, -50);
+       glVertex3f(-40, -1.0, 50);
+       glVertex3f(40, -1.0, 50);
+       glVertex3f(40, -1.0, -50);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//GARIS RED CARPET
+       glColor3f(0.0f, 0.0f, 0.0f);
+       glVertex3f(-40, -1.0, -50);
+       glVertex3f(-40, -1.0, 50);
+       glVertex3f(40, -1.0, 50);
+       glVertex3f(40, -1.0, -50);
+    glEnd();
+}
+void pijakankaki(void){
+ glBegin(GL_QUADS); //Pijakan Kaki (belakang)
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 8.0, -98);
@@ -253,21 +276,11 @@ void display(void)
         glVertex3f(30, 0.0, -85);
         glVertex3f(30, 0.0, -98);
     glEnd();
-    glBegin(GL_QUADS);// RED CARPET
-        glColor3f(0.973f,0.0f,0.0f);
-        glVertex3f(-40, -1.0, -50);
-       glVertex3f(-40, -1.0, 50);
-       glVertex3f(40, -1.0, 50);
-       glVertex3f(40, -1.0, -50);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//GARIS RED CARPET
-       glColor3f(0.0f, 0.0f, 0.0f);
-       glVertex3f(-40, -1.0, -50);
-       glVertex3f(-40, -1.0, 50);
-       glVertex3f(40, -1.0, 50);
-       glVertex3f(40, -1.0, -50);
-    glEnd();
-    glBegin(GL_QUADS);//Rak Dinding
+
+}
+
+void rakdinding(void){
+ glBegin(GL_QUADS);//Rak Dinding
     glColor3f(0.671f, 0.322f, 0.0f);
     glVertex3f(-30, 35.0, -50);
     glVertex3f(-30, 35.0, 50);
@@ -281,7 +294,10 @@ void display(void)
     glVertex3f(-48, 35.0, 50);
     glVertex3f(-48, 35.0, -50);
     glEnd();
-    glBegin(GL_QUADS); //LCD Atas
+}
+
+void LCD(void){
+glBegin(GL_QUADS); //LCD Atas
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 48.0, -7.0);
         glVertex3f(10.0, 48.0, -7.0);
@@ -365,6 +381,34 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(10.0, 40.0, 7.0);
     glEnd();
+}
+
+
+void display(void)
+{
+    if (is_depth)
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    else
+    glClear(GL_COLOR_BUFFER_BIT);
+    glPushMatrix();
+    glRotatef(xrot, 1, 0, 0);
+    glRotatef(yrot, 0, 1, 0);
+
+    jalanrumah();
+    atap();
+    interior();
+
+     /*
+        ISI KAMPUS
+
+    */
+
+    papantulis();
+    pijakankaki();
+    redcarpet();
+    rakdinding();
+    LCD();
+
     glPopMatrix();
     glutSwapBuffers();
 }
