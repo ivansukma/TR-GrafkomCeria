@@ -85,7 +85,6 @@ void interior(void){
         glVertex3f(50.0, 0.0, -100.0);
     glEnd();
 
-
     glBegin(GL_QUADS);//belakang
         glColor3f(1.0f, 0.408f, 0.0f);
         glVertex3f(-50.0, 0.0, -100.0);
@@ -93,6 +92,7 @@ void interior(void){
         glVertex3f(50.0, 50.0, -100.0);
         glVertex3f(50.0, 0.0, -100.0);
     glEnd();
+
     glBegin(GL_LINE_LOOP);//garis belakang
         glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-50.0, 0.0, -100.0);
@@ -130,59 +130,21 @@ void jalanrumah(void){
 }
 
 void atap(void){
-    glBegin(GL_TRIANGLES);//atap depan rumah
-        glColor3f(0.165f,0.09f,0.004f);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-    glEnd();
-    glBegin(GL_LINE_LOOP);//garis atap depan rumah
-        glColor3f(0.0f,0.0f,0.0f);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-    glEnd();
-     glBegin(GL_QUADS);//atap  kiri
-        glColor3f(0.165f,0.09f,0.004f);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-    glEnd();
-       glBegin(GL_LINE_LOOP);//garis atap kiri
-        glColor3f(0.0f,0.0f,0.0f);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(-50.0, 50.0, 100.0);
-    glEnd();
-    glBegin(GL_QUADS);//atap samping kanan
-        glColor3f(0.165f,0.09f,0.004f);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-    glEnd();
 
-    glBegin(GL_LINE_LOOP);//garis atap samping kanan
-        glColor3f(0.0f,0.0f,0.0f);
-        glVertex3f(50.0, 50.0, 100.0);
-        glVertex3f(0.0, 100.0, 100.0);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-    glEnd();
     glBegin(GL_TRIANGLES);//atap belakang
          glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(-50.0, 50.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
+
     glBegin(GL_LINE_LOOP);//garis atap belakang
          glColor3f(0.0f,0.0f,0.0f);
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(-50.0, 50.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
+
 }
 
 void papantulis(void){
@@ -395,7 +357,6 @@ void display(void)
     glRotatef(yrot, 0, 1, 0);
 
     jalanrumah();
-    atap();
     interior();
 
      /*
