@@ -43,6 +43,9 @@ void init(void)
 {
     glClearColor(0.0, 1.0, 0.906, 0.0);
     glEnable(GL_DEPTH_TEST);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
+	glEnable(GL_LIGHT0);
     is_depth=1;
     glMatrixMode(GL_MODELVIEW);
     glPointSize(20.0);
