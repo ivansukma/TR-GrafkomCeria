@@ -474,6 +474,7 @@ void keyboard(unsigned char key, int x, int y)
 void resize(int width, int height)
 {
     if (height == 0) height = 1;
+    glViewport(0, 0, width, height);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluPerspective(45.0, width / height, 1.0, 400.0);
