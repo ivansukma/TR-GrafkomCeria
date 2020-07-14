@@ -178,51 +178,10 @@ void display(void)
         glVertex3f(50.0, 50.0, -100.0);
     glEnd();
     /*
-        ISI BARANG RUMAH
+        ISI KAMPUS
 
     */
-     glBegin(GL_QUADS);//kotak motif lukisan  (kanan atas)
-        glColor3f(0.973f,0.0f,0.42f);
-        glVertex3f(-48, 25.0, 0.0);
-        glVertex3f(-48, 40.0, 0.0);
-        glVertex3f(-48, 40.0, -50.0);
-           glVertex3f(-48, 25.0, -50.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis kotak motif lukisan  (kanan atas)
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-48, 25.0, 0.0);
-        glVertex3f(-48, 40.0, 0.0);
-        glVertex3f(-48, 40.0, -50.0);
-           glVertex3f(-48, 25.0, -50.0);
-    glEnd();
-        glBegin(GL_QUADS);//kotak motif (bawah)
-        glColor3f(0.973f, 0.0f, 0.906f);
-        glVertex3f(-48, 10.0, 50.0);
-        glVertex3f(-48, 25.0, 50.0);
-        glVertex3f(-48, 25.0, -50.0);
-           glVertex3f(-48, 10.0, -50.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis kotak motif( bawah)
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-48, 10.0, 50.0);
-        glVertex3f(-48, 25.0, 50.0);
-        glVertex3f(-48, 25.0, -50.0);
-           glVertex3f(-48, 10.0, -50.0);
-    glEnd();
- glBegin(GL_QUADS);//kotak motif lukisan samping (kiri atas)
-        glColor3f(0.553f,0.0f,0.973f);
-        glVertex3f(-48, 25.0, 0.0);
-        glVertex3f(-48, 40.0, 0.0);
-        glVertex3f(-48, 40.0, 50.0);
-           glVertex3f(-48, 25.0, 50.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis kotak motif samping kiri (kiri atas)
-        glColor3f(0.0f,0.0f,0.0f);
-        glVertex3f(-48, 25.0, 0.0);
-        glVertex3f(-48, 40.0, 0.0);
-        glVertex3f(-48, 40.0, 50.0);
-           glVertex3f(-48, 25.0, 50.0);
-    glEnd();
+
         glBegin(GL_QUADS);//Papan Tulis
         glColor3f(1.0f,1.0f,1.0f);
         glVertex3f(-30, 10.0, -98);
@@ -281,17 +240,17 @@ void display(void)
     glEnd();
     glBegin(GL_QUADS);//Rak Dinding
     glColor3f(0.671f, 0.322f, 0.0f);
-    glVertex3f(30, 35.0, -50);
-    glVertex3f(30, 35.0, 50);
-    glVertex3f(48, 35.0, 50);
-    glVertex3f(48, 35.0, -50);
+    glVertex3f(-30, 35.0, -50);
+    glVertex3f(-30, 35.0, 50);
+    glVertex3f(-48, 35.0, 50);
+    glVertex3f(-48, 35.0, -50);
     glEnd();
     glBegin(GL_LINE_LOOP);//GARIS Rak Dinding
     glColor3f(0.0f, 0.0f, 0.0f);
-    glVertex3f(30, 35.0, -50);
-    glVertex3f(30, 35.0, 50);
-    glVertex3f(48, 35.0, 50);
-    glVertex3f(48, 35.0, -50);
+    glVertex3f(-30, 35.0, -50);
+    glVertex3f(-30, 35.0, 50);
+    glVertex3f(-48, 35.0, 50);
+    glVertex3f(-48, 35.0, -50);
     glEnd();
     glPopMatrix();
     glutSwapBuffers();
