@@ -223,19 +223,19 @@ void display(void)
         glVertex3f(-48, 40.0, 50.0);
            glVertex3f(-48, 25.0, 50.0);
     glEnd();
-        glBegin(GL_QUADS);// TV WALLMOUNT
-        glColor3f(0.345f,0.333f,0.333f);
-        glVertex3f(-15, 25.0, -98);
-        glVertex3f(-15, 40.0, -98);
-        glVertex3f(15, 40.0, -98);
-        glVertex3f(15, 25.0, -98);
+        glBegin(GL_QUADS);//Papan Tulis
+        glColor3f(1.0f,1.0f,1.0f);
+        glVertex3f(-30, 10.0, -98);
+        glVertex3f(-30, 40.0, -98);
+        glVertex3f(30, 40.0, -98);
+        glVertex3f(30, 10.0, -98);
     glEnd();
-        glBegin(GL_LINE_LOOP);//garis TV WALLMOUNT
+        glBegin(GL_LINE_LOOP);//Garis Papan Tulis
         glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-15, 25.0, -98);
-        glVertex3f(-15, 40.0, -98);
-        glVertex3f(15, 40.0, -98);
-        glVertex3f(15, 25.0, -98);
+        glVertex3f(-30, 10.0, -98);
+        glVertex3f(-30, 40.0, -98);
+        glVertex3f(30, 40.0, -98);
+        glVertex3f(30, 10.0, -98);
     glEnd();
     glBegin(GL_QUADS);// RED CARPET
         glColor3f(0.973f,0.0f,0.0f);
@@ -250,14 +250,6 @@ void display(void)
        glVertex3f(-40, -1.0, 50);
        glVertex3f(40, -1.0, 50);
        glVertex3f(40, -1.0, -50);
-    glEnd();
-    glBegin(GL_POINTS);// Lampu Led Kotak Kuning kanan
-    glColor3f(1.0f, 0.992f, 0.0f);
-    glVertex3f(30, 40, -98);
-    glEnd();
-    glBegin(GL_POINTS);// Lampu Led Kotak Kuning kiri
-    glColor3f(1.0f, 0.992f, 0.0f);
-    glVertex3f(-30.0, 40.0, -98);
     glEnd();
     glBegin(GL_QUADS);//Rak Dinding
     glColor3f(0.671f, 0.322f, 0.0f);
