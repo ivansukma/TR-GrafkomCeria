@@ -288,7 +288,13 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(-10.0, 48.0, 7.0);
     glEnd();
-
+    glBegin(GL_LINE_LOOP);//GARIS Lcd Atas
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+    glEnd();
     glBegin(GL_POLYGON); //LCD bawah
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
@@ -296,7 +302,13 @@ void display(void)
         glVertex3f(10.0, 40.0, 7.0);
         glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
-
+  glBegin(GL_LINE_LOOP);//GARIS Lcd bawah
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(10.0, 40.0, -7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 40.0, 7.0);
+    glEnd();
     glBegin(GL_POLYGON); //LCD kanan
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(10.0, 40.0, -7.0);
@@ -304,7 +316,13 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(10.0, 40.0, 7.0);
     glEnd();
-
+  glBegin(GL_LINE_LOOP);//GARIS Lcd kanan
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 40.0, -7.0);
+        glVertex3f(10.0, 48.0, -7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+    glEnd();
     glBegin(GL_POLYGON); //LCD kiri
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
@@ -312,13 +330,26 @@ void display(void)
         glVertex3f(-10.0, 48.0, 7.0);
         glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
-
+  glBegin(GL_LINE_LOOP);//GARIS Lcd kiri
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 40.0, 7.0);
+    glEnd();
     glBegin(GL_POLYGON); //LCD depan
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
         glVertex3f(-10.0, 48.0, -7.0);
         glVertex3f(10.0, 48.0, -7.0);
         glVertex3f(10.0, 40.0, -7.0);
+    glEnd();
+      glBegin(GL_LINE_LOOP);//GARIS Lcd depan
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 40.0, -7.0);
+        glVertex3f(-10.0, 48.0, -7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
     glBegin(GL_POLYGON); //LCD belakang
         glColor3f(1.0f, 1.0f, 1.0f);
@@ -327,7 +358,13 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(10.0, 40.0, 7.0);
     glEnd();
-
+      glBegin(GL_LINE_LOOP);//GARIS lcd belakang
+    glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(10.0, 48.0, 7.0);
+        glVertex3f(10.0, 40.0, 7.0);
+    glEnd();
     glPopMatrix();
     glutSwapBuffers();
 }
