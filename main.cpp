@@ -237,10 +237,8 @@ void display(void)
         glVertex3f(30, 40.0, -98);
         glVertex3f(30, 10.0, -98);
     glEnd();
-
     glBegin(GL_QUADS); //Pijakan Kaki (belakang)
         glColor3f(0.165f,0.09f,0.004f);
-        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 8.0, -98);
         glVertex3f(30, 8.0, -98);
@@ -248,8 +246,6 @@ void display(void)
     glEnd();
     glBegin(GL_QUADS); //Pijakan Kaki (atas)
         glColor3f(0.165f,0.09f,0.004f);
-
-        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 8.0, -98);
         glVertex3f(-30, 8.0, -90);
         glVertex3f(30, 8.0, -90);
@@ -257,22 +253,18 @@ void display(void)
     glEnd();
     glBegin(GL_QUADS); //Pijakan Kaki (depan)
         glColor3f(0.165f,0.09f,0.004f);
-        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 0.0, -85);
         glVertex3f(-30, 8.0, -90);
         glVertex3f(30, 8.0, -90);
         glVertex3f(30, 0.0, -85);
     glEnd();
-
     glBegin(GL_QUADS); //Pijakan Kaki (bawah)
         glColor3f(0.165f,0.09f,0.004f);
-        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 0.0, -85);
         glVertex3f(30, 0.0, -85);
         glVertex3f(30, 0.0, -98);
     glEnd();
-
     glBegin(GL_QUADS);// RED CARPET
         glColor3f(0.973f,0.0f,0.0f);
         glVertex3f(-40, -1.0, -50);
