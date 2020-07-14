@@ -24,7 +24,7 @@ int main (int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(900, 900);
     glutInitWindowPosition(40, 40);
-    glutCreateWindow("Ivan Sukma Hanindria - 672018048");
+    glutCreateWindow("Tugas Rancang Grafkom Kampus Inggris");
     init();
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -82,20 +82,6 @@ void display(void)
         glVertex3f(50.0, 50.0, 100.1);
            glVertex3f(50.0, 0.0, 100.1);
     glEnd();
-    glBegin(GL_QUADS);// pintu rumah
-        glColor3f(0.671f, 0.322f, 0.0f);
-        glVertex3f(-15.1, 0.0, 100.5);
-        glVertex3f(-15.1, 40.0, 100.5);
-        glVertex3f(15.1, 40.0, 100.5);
-        glVertex3f(15.1, 0.0, 100.5);
-    glEnd();
-    glBegin(GL_LINE_LOOP);//garis pintu rumah
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-15.1, 0.0, 100.6);
-        glVertex3f(-15.1, 40.0, 100.6);
-        glVertex3f(15.1, 40.0, 100.6);
-        glVertex3f(15.1, 0.0, 100.6);
-    glEnd();
    glBegin(GL_TRIANGLES);//atap depan rumah
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(0.0, 100.0, 100.0);
@@ -150,20 +136,6 @@ void display(void)
         glVertex3f(50.0, 50.0, -100.0);
         glVertex3f(50.0, 0.0, -100.0);
     glEnd();
-    glBegin(GL_QUADS);//pintu samping
-       glColor3f(0.671f, 0.322f, 0.0f);
-        glVertex3f(51.1, 30.0, 20.0);
-        glVertex3f(51.1, -2.0, 20.0);
-        glVertex3f(51.1, -2.0, 0.0);
-        glVertex3f(51.1, 30.0, 0.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis pintu samping
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(51.1, 30.0, 20.0);
-        glVertex3f(51.1, -2.0, 20.0);
-        glVertex3f(51.1, -2.0, 0.0);
-        glVertex3f(51.1, 30.0, 0.0);
-    glEnd();
     glBegin(GL_QUADS);//atap samping kanan
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(50.0, 50.0, 100.0);
@@ -204,34 +176,6 @@ void display(void)
         glVertex3f(0.0, 100.0, -100.0);
         glVertex3f(-50.0, 50.0, -100.0);
         glVertex3f(50.0, 50.0, -100.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis jendela kiri
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(51.1, 30.0, 40.0);
-        glVertex3f(51.1, -2.0, 40.0);
-        glVertex3f(51.1, -2.0, 70.0);
-        glVertex3f(51.1, 30.0, 70.0);
-    glEnd();
-       glBegin(GL_LINE_LOOP);//garis jendela kanan
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(51.1, 30.0, -50.0);
-        glVertex3f(51.1, -1.0, -50.0);
-        glVertex3f(51.1, -1.0, -70.0);
-        glVertex3f(51.1, 30.0, -70.0);
-    glEnd();
-    glBegin(GL_QUADS);//jendela  kiri
-        glColor4f(0.345f,0.333f,0.333f,0.6f);
-        glVertex3f(51.1, 30.0, 40.0);
-        glVertex3f(51.1, -2.0, 40.0);
-        glVertex3f(51.1, -2.0, 70.0);
-        glVertex3f(51.1,30.0, 70.0);
-    glEnd();
-       glBegin(GL_QUADS);//jendela  kanan
-        glColor4f(0.345f,0.333f,0.333f,0.6f);
-        glVertex3f(51.1, 30.0, -50.0);
-        glVertex3f(51.1, -1.0, -50.0);
-        glVertex3f(51.1, -1.0, -70.0);
-        glVertex3f(51.1, 30.0, -70.0);
     glEnd();
     /*
         ISI BARANG RUMAH
