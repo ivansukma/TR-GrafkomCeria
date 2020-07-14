@@ -60,7 +60,27 @@ void interior(void){
         glVertex3f(80.0, 100.0, 100.1);
            glVertex3f(80.0, 0.0, 100.1);
     glEnd();
-
+    glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-80.0, 0.0, 100.1);
+        glVertex3f(-80.0, 100.0, 100.1);
+        glVertex3f(80.0, 100.0, 100.1);
+        glVertex3f(80.0, 0.0, 100.1);
+    glEnd();
+        glBegin(GL_QUADS);//garis belakang
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(-80.0, 0.0, -100.1);
+        glVertex3f(-80.0, 100.0, -100.1);
+        glVertex3f(80.0, 100.0, -100.1);
+           glVertex3f(80.0, 0.0, -100.1);
+    glEnd();
+       glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-80.0, 0.0, -100.1);
+        glVertex3f(-80.0, 100.0, -100.1);
+        glVertex3f(80.0, 100.0, -100.1);
+        glVertex3f(80.0, 0.0, -100.1);
+    glEnd();
     glBegin(GL_QUADS);//garis depan rumah`transisi 1 kiri
         glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
         glVertex3f(-50.0, 100.0, 100.1);
@@ -68,7 +88,13 @@ void interior(void){
         glVertex3f(-50.0, 0.0, 120.1);
         glVertex3f(-50.0, 0.0, 100.1);
     glEnd();
-
+       glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-50.0, 100.0, 100.1);
+        glVertex3f(-50.0, 100.0, 120.1);
+        glVertex3f(-50.0, 0.0, 120.1);
+        glVertex3f(-50.0, 0.0, 100.1);
+    glEnd();
     glBegin(GL_QUADS);//garis depan rumah`transisi 2 kiri
         glColor3f(203/255.0f, 135/255.0f, 87/255.0f);
         glVertex3f(-50.0, 100.0, 120.1);
@@ -76,7 +102,13 @@ void interior(void){
         glVertex3f(-20.0, 0.0, 120.1);
         glVertex3f(-50.0, 0.0, 120.1);
     glEnd();
-
+     glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-50.0, 100.0, 120.1);
+        glVertex3f(-20.0, 100.0, 120.1);
+        glVertex3f(-20.0, 0.0, 120.1);
+        glVertex3f(-50.0, 0.0, 120.1);
+    glEnd();
      glBegin(GL_QUADS);//garis depan rumah`transisi 3 kiri
         glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
         glVertex3f(-20.0, 100.0, 120.1);
@@ -84,7 +116,13 @@ void interior(void){
         glVertex3f(-20.0, 0.0, 140.1);
         glVertex3f(-20.0, 0.0, 120.1);
     glEnd();
-
+glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-20.0, 100.0, 120.1);
+        glVertex3f(-20.0, 100.0, 140.1);
+        glVertex3f(-20.0, 0.0, 140.1);
+        glVertex3f(-20.0, 0.0, 120.1);
+    glEnd();
      glBegin(GL_QUADS);//garis depan rumah`transisi 4 kiri
         glColor3f(203/255.0f, 135/255.0f, 87/255.0f);
         glVertex3f(-20.0, 100.0, 140.1);
@@ -92,7 +130,13 @@ void interior(void){
         glVertex3f(10.0, 0.0, 140.1);
         glVertex3f(-20.0, 0.0, 140.1);
     glEnd();
-
+glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-20.0, 100.0, 140.1);
+        glVertex3f(10.0, 100.0, 140.1);
+        glVertex3f(10.0, 0.0, 140.1);
+        glVertex3f(-20.0, 0.0, 140.1);
+    glEnd();
      glBegin(GL_QUADS);//garis depan rumah`transisi 1 kanan
         glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
         glVertex3f(10.0, 100.0, 120.1);
@@ -100,7 +144,13 @@ void interior(void){
         glVertex3f(10.0, 0.0, 140.1);
         glVertex3f(10.0, 0.0, 120.1);
     glEnd();
-
+glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 100.0, 120.1);
+        glVertex3f(10.0, 100.0, 140.1);
+        glVertex3f(10.0, 0.0, 140.1);
+        glVertex3f(10.0, 0.0, 120.1);
+    glEnd();
      glBegin(GL_QUADS);//garis depan rumah`transisi 2 kanan
         glColor3f(203/255.0f, 135/255.0f, 87/255.0f);
         glVertex3f(10.0, 100.0, 120.1);
@@ -108,7 +158,13 @@ void interior(void){
         glVertex3f(40.0, 0.0, 120.1);
         glVertex3f(10.0, 0.0, 120.1);
     glEnd();
-
+glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 100.0, 120.1);
+        glVertex3f(40.0, 100.0, 120.1);
+        glVertex3f(40.0, 0.0, 120.1);
+        glVertex3f(10.0, 0.0, 120.1);
+    glEnd();
     glBegin(GL_QUADS);//garis depan rumah`transisi 3 kiri
         glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
         glVertex3f(40.0, 100.0, 100.1);
@@ -116,21 +172,12 @@ void interior(void){
         glVertex3f(40.0, 0.0, 120.1);
         glVertex3f(40.0, 0.0, 100.1);
     glEnd();
-
-    glBegin(GL_QUADS);//belakang
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(-50.0, 0.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
-    glEnd();
-
-    glBegin(GL_LINE_LOOP);//garis belakang
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-50.0, 0.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
-        glVertex3f(50.0, 0.0, -100.0);
+glBegin(GL_LINE_LOOP);
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(40.0, 100.0, 100.1);
+        glVertex3f(40.0, 100.0, 120.1);
+        glVertex3f(40.0, 0.0, 120.1);
+        glVertex3f(40.0, 0.0, 100.1);
     glEnd();
 }
 
@@ -145,7 +192,6 @@ void jalanrumah(void){
         glColor3f(0.8f, 0.8f, 0.8f);
         glVertex3f(200.0, -3.0, -200.0);
     glEnd();
-
      glBegin(GL_LINE_LOOP);//Garis Halaman rumah
        glColor3f(0.0f, 0.0f, 0.0f);
        glVertex3f(-200.0, -3.0, -200.0);
