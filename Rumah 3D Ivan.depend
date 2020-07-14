@@ -220,6 +220,7 @@
 	<stddef.h>
 	<GL/gl.h>
 
+<<<<<<< HEAD
 1594693714 source:c:\users\user\documents\github\tr-grafkomceria\main.cpp
 	<windows.h>
 	<GLUT/glut.h>
@@ -232,3 +233,5 @@
 	<GL/glut.h>
 	<stdlib.h>
 
+=======
+>>>>>>> 7e2d646c217d19607a10e18f7ea26ce4f704888b
