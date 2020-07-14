@@ -24,7 +24,7 @@ int main (int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(900, 900);
     glutInitWindowPosition(40, 40);
-    glutCreateWindow("Tugas Rancang Grafkom Kampus Inggris");
+    glutCreateWindow("Tugas Rancang Grafkom Kampus Inggris Imperial College");
     init();
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
