@@ -203,8 +203,22 @@ void display(void)
         glVertex3f(30, 8.0, -98);
         glVertex3f(30, 0.0, -98);
     glEnd();
+    glBegin(GL_LINE_LOOP);//Garis pijakan kaki (belakang)
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-30, 0.0, -98);
+        glVertex3f(-30, 8.0, -98);
+        glVertex3f(30, 8.0, -98);
+        glVertex3f(30, 0.0, -98);
+    glEnd();
     glBegin(GL_QUADS); //Pijakan Kaki (atas)
         glColor3f(0.165f,0.09f,0.004f);
+        glVertex3f(-30, 8.0, -98);
+        glVertex3f(-30, 8.0, -90);
+        glVertex3f(30, 8.0, -90);
+        glVertex3f(30, 8.0, -98);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//Garis pijakan kaki (atas)
+       glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 8.0, -98);
         glVertex3f(-30, 8.0, -90);
         glVertex3f(30, 8.0, -90);
@@ -217,8 +231,22 @@ void display(void)
         glVertex3f(30, 8.0, -90);
         glVertex3f(30, 0.0, -85);
     glEnd();
+        glBegin(GL_LINE_LOOP);//Garis pijakan kaki (depan)
+       glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-30, 0.0, -85);
+        glVertex3f(-30, 8.0, -90);
+        glVertex3f(30, 8.0, -90);
+        glVertex3f(30, 0.0, -85);
+    glEnd();
     glBegin(GL_QUADS); //Pijakan Kaki (bawah)
         glColor3f(0.165f,0.09f,0.004f);
+        glVertex3f(-30, 0.0, -98);
+        glVertex3f(-30, 0.0, -85);
+        glVertex3f(30, 0.0, -85);
+        glVertex3f(30, 0.0, -98);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//Garis pijakan kaki (depan)
+       glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 0.0, -85);
         glVertex3f(30, 0.0, -85);
