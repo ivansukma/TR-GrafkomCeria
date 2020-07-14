@@ -47,7 +47,6 @@ void init(void)
     glMatrixMode(GL_MODELVIEW);
     glPointSize(20.0);
     glLineWidth(6.0f);
-
 }
 void display(void)
 {
@@ -181,7 +180,6 @@ void display(void)
         ISI KAMPUS
 
     */
-
         glBegin(GL_QUADS);//Papan Tulis
         glColor3f(1.0f,1.0f,1.0f);
         glVertex3f(-30, 10.0, -98);
@@ -280,8 +278,7 @@ void display(void)
     glVertex3f(-48, 35.0, 50);
     glVertex3f(-48, 35.0, -50);
     glEnd();
-
-    glBegin(GL_POLYGON); //LCD Atas
+    glBegin(GL_QUADS); //LCD Atas
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 48.0, -7.0);
         glVertex3f(10.0, 48.0, -7.0);
@@ -295,7 +292,7 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(-10.0, 48.0, 7.0);
     glEnd();
-    glBegin(GL_POLYGON); //LCD bawah
+    glBegin(GL_QUADS); //LCD bawah
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
         glVertex3f(10.0, 40.0, -7.0);
@@ -309,7 +306,7 @@ void display(void)
         glVertex3f(10.0, 40.0, 7.0);
         glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
-    glBegin(GL_POLYGON); //LCD kanan
+    glBegin(GL_QUADS); //LCD kanan
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(10.0, 40.0, -7.0);
         glVertex3f(10.0, 48.0, -7.0);
@@ -323,7 +320,7 @@ void display(void)
         glVertex3f(10.0, 48.0, 7.0);
         glVertex3f(10.0, 40.0, 7.0);
     glEnd();
-    glBegin(GL_POLYGON); //LCD kiri
+    glBegin(GL_QUADS); //LCD kiri
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
         glVertex3f(-10.0, 48.0, -7.0);
@@ -337,7 +334,7 @@ void display(void)
         glVertex3f(-10.0, 48.0, 7.0);
         glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
-    glBegin(GL_POLYGON); //LCD depan
+    glBegin(GL_QUADS); //LCD depan
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, -7.0);
         glVertex3f(-10.0, 48.0, -7.0);
@@ -351,7 +348,7 @@ void display(void)
         glVertex3f(-10.0, 48.0, 7.0);
         glVertex3f(-10.0, 40.0, 7.0);
     glEnd();
-    glBegin(GL_POLYGON); //LCD belakang
+    glBegin(GL_QUADS); //LCD belakang
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 40.0, 7.0);
         glVertex3f(-10.0, 48.0, 7.0);
