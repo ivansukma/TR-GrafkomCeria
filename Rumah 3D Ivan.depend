@@ -220,18 +220,21 @@
 	<stddef.h>
 	<GL/gl.h>
 
-<<<<<<< HEAD
+1301111164 D
+
 1594693714 source:c:\users\user\documents\github\tr-grafkomceria\main.cpp
 	<windows.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 
-1594694261 source:d:\dunia kuliah ivan\tr-grafkomceria\main.cpp
+1594697101 source:d:\dunia kuliah ivan\tr-grafkomceria\main.cpp
 	<windows.h>
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 
-=======
->>>>>>> 7e2d646c217d19607a10e18f7ea26ce4f704888b
+1594694261 
+
+1594694261 d646c217d19607a10e18f7ea26ce4f704888b
+
