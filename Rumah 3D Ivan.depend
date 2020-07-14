@@ -220,3 +220,9 @@
 	<stddef.h>
 	<GL/gl.h>
 
+1594693281 source:c:\users\userpc\documents\github\tr-grafkomceria\main.cpp
+	<windows.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+
