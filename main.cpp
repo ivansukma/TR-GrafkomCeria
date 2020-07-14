@@ -239,7 +239,11 @@ void display(void)
     glEnd();
 
     glBegin(GL_QUADS); //Pijakan Kaki (belakang)
+<<<<<<< HEAD
         glColor3f(0.165f,0.09f,0.004f);
+=======
+        glColor3f(0.0f, 0.0f, 0.0f);
+>>>>>>> 9aeff4b3915493352c621d18455c490e064dd7e5
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 8.0, -98);
         glVertex3f(30, 8.0, -98);
@@ -247,7 +251,11 @@ void display(void)
     glEnd();
 
     glBegin(GL_QUADS); //Pijakan Kaki (atas)
+<<<<<<< HEAD
         glColor3f(0.165f,0.09f,0.004f);
+=======
+        glColor3f(0.0f, 0.0f, 0.0f);
+>>>>>>> 9aeff4b3915493352c621d18455c490e064dd7e5
         glVertex3f(-30, 8.0, -98);
         glVertex3f(-30, 8.0, -90);
         glVertex3f(30, 8.0, -90);
@@ -255,7 +263,11 @@ void display(void)
     glEnd();
 
     glBegin(GL_QUADS); //Pijakan Kaki (depan)
+<<<<<<< HEAD
         glColor3f(0.165f,0.09f,0.004f);
+=======
+        glColor3f(0.0f, 0.0f, 0.0f);
+>>>>>>> 9aeff4b3915493352c621d18455c490e064dd7e5
         glVertex3f(-30, 0.0, -85);
         glVertex3f(-30, 8.0, -90);
         glVertex3f(30, 8.0, -90);
@@ -263,7 +275,11 @@ void display(void)
     glEnd();
 
     glBegin(GL_QUADS); //Pijakan Kaki (bawah)
+<<<<<<< HEAD
         glColor3f(0.165f,0.09f,0.004f);
+=======
+        glColor3f(0.0f, 0.0f, 0.0f);
+>>>>>>> 9aeff4b3915493352c621d18455c490e064dd7e5
         glVertex3f(-30, 0.0, -98);
         glVertex3f(-30, 0.0, -85);
         glVertex3f(30, 0.0, -85);
