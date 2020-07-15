@@ -52,8 +52,8 @@ void init(void){
 }
 
 void interior(int xkiri, int xkanan, int xatas) {
-    glBegin(GL_QUADS);//garis depan rumah`
-        glColor3f(1.0f, 0.408f, 0.0f);
+    glBegin(GL_QUADS);//tembok depan kampus
+        glColor3f(0.851f, 0.467f, 0.0f);
         glVertex3f(-80.0 - xkiri, 0.0, 100.1);
         glVertex3f(-80.0 - xkiri, 100.0 + xatas, 100.1);
         glVertex3f(80.0 + xkanan, 100.0 + xatas, 100.1);
@@ -67,7 +67,7 @@ void interior(int xkiri, int xkanan, int xatas) {
         glVertex3f(80.0 + xkanan, 0.0, 100.1);
     glEnd();
         glBegin(GL_QUADS);//garis belakang
-        glColor3f(1.0f, 0.408f, 0.0f);
+        glColor3f(0.851f, 0.467f, 0.0f);
         glVertex3f(-80.0 - xkiri, 0.0, -100.1);
         glVertex3f(-80.0 - xkiri, 100.0 + xatas, -100.1);
         glVertex3f(80.0 + xkanan, 100.0 + xatas, -100.1);
@@ -234,6 +234,38 @@ glBegin(GL_LINE_LOOP);
         glVertex3f(40.0, 0.0, 140.1);
        glVertex3f(-20.0 - xkiri +40, 0.0, 140.1);
     glEnd();
+
+        glBegin(GL_QUADS);//tembok kanan
+        glColor3f(0.851f, 0.467f, 0.0f);
+        glVertex3f(140.0, 0.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 0.0, -100.0);
+    glEnd();
+
+        glBegin(GL_LINE_LOOP);//garis tembok kanan
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(140.0, 0.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 0.0, -100.0);
+    glEnd();
+
+        glBegin(GL_QUADS);//tembok kiri
+        glColor3f(0.851f, 0.467f, 0.0f);
+        glVertex3f(-140.0, 0.0, 100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 0.0, -100.0);
+    glEnd();
+
+        glBegin(GL_LINE_LOOP);//garis tembok kiri
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-140.0, 0.0, 100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 0.0, -100.0);
+    glEnd();
 }
 
 void menaraKiri(int xkiri, int xkanan, int xatas) {
@@ -279,34 +311,6 @@ void menaraKiri(int xkiri, int xkanan, int xatas) {
         glVertex3f(-140.0, 100.0 + xatas, 100);
         glVertex3f(-140.0, 0.0, 100);
         glVertex3f(-150.0 - xkiri +50, 0.0, 50);
-    glEnd();
-    glBegin(GL_QUADS);//tembok kanan
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(140.0, 0.0, 100.0);
-        glVertex3f(140.0, 180.0, 100.0);
-        glVertex3f(140.0, 180.0, -100.0);
-        glVertex3f(140.0, 0.0, -100.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis tembok kanan
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(140.0, 0.0, 100.0);
-        glVertex3f(140.0, 180.0, 100.0);
-        glVertex3f(140.0, 180.0, -100.0);
-        glVertex3f(140.0, 0.0, -100.0);
-    glEnd();
-        glBegin(GL_QUADS);//tembok kiri
-        glColor3f(1.0f, 0.408f, 0.0f);
-        glVertex3f(-140.0, 0.0, 100.0);
-        glVertex3f(-140.0, 180.0, 100.0);
-        glVertex3f(-140.0, 180.0, -100.0);
-        glVertex3f(-140.0, 0.0, -100.0);
-    glEnd();
-        glBegin(GL_LINE_LOOP);//garis tembok kiri
-        glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-140.0, 0.0, 100.0);
-        glVertex3f(-140.0, 180.0, 100.0);
-        glVertex3f(-140.0, 180.0, -100.0);
-        glVertex3f(-140.0, 0.0, -100.0);
     glEnd();
 }
 
@@ -579,22 +583,19 @@ glBegin(GL_QUADS);//Papan Tulis
 }
 
 void redcarpet(void) {
-
-
-
 glBegin(GL_QUADS);// RED CARPET
         glColor3f(0.973f,0.0f,0.0f);
-        glVertex3f(-40, -1.0, -50);
-       glVertex3f(-40, -1.0, 50);
-       glVertex3f(40, -1.0, 50);
-       glVertex3f(40, -1.0, -50);
+        glVertex3f(-60, -3.0, -50);
+       glVertex3f(-60, -3.0, 50);
+       glVertex3f(60, -3.0, 50);
+       glVertex3f(60, -3.0, -50);
     glEnd();
         glBegin(GL_LINE_LOOP);//GARIS RED CARPET
        glColor3f(0.0f, 0.0f, 0.0f);
-       glVertex3f(-40, -1.0, -50);
-       glVertex3f(-40, -1.0, 50);
-       glVertex3f(40, -1.0, 50);
-       glVertex3f(40, -1.0, -50);
+       glVertex3f(-60, -3.0, -50);
+       glVertex3f(-60, -3.0, 50);
+       glVertex3f(60, -3.0, 50);
+       glVertex3f(60, -3.0, -50);
     glEnd();
 }
 void pijakankaki(void) {
@@ -660,17 +661,17 @@ void pijakankaki(void) {
 void rakdinding(void) {
  glBegin(GL_QUADS);//Rak Dinding
     glColor3f(0.671f, 0.322f, 0.0f);
-    glVertex3f(-30, 35.0, -50);
-    glVertex3f(-30, 35.0, 50);
-    glVertex3f(-48, 35.0, 50);
-    glVertex3f(-48, 35.0, -50);
+    glVertex3f(-120, 35.0, -50);
+    glVertex3f(-120, 35.0, 50);
+    glVertex3f(-138, 35.0, 50);
+    glVertex3f(-138, 35.0, -50);
     glEnd();
     glBegin(GL_LINE_LOOP);//GARIS Rak Dinding
     glColor3f(0.0f, 0.0f, 0.0f);
-    glVertex3f(-30, 35.0, -50);
-    glVertex3f(-30, 35.0, 50);
-    glVertex3f(-48, 35.0, 50);
-    glVertex3f(-48, 35.0, -50);
+    glVertex3f(-120, 35.0, -50);
+    glVertex3f(-120, 35.0, 50);
+    glVertex3f(-138, 35.0, 50);
+    glVertex3f(-138, 35.0, -50);
     glEnd();
 }
 
