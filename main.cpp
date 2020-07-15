@@ -673,22 +673,63 @@ void jalanrumah(void) {
 }
 
 void atap(void) {
-
     glBegin(GL_TRIANGLES);//atap belakang
-         glColor3f(0.165f,0.09f,0.004f);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(0.0, 230.0, 0.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(140.0, 180.0, -100.0);
     glEnd();
 
     glBegin(GL_LINE_LOOP);//garis atap belakang
          glColor3f(0.0f,0.0f,0.0f);
-        glVertex3f(0.0, 100.0, -100.0);
-        glVertex3f(-50.0, 50.0, -100.0);
-        glVertex3f(50.0, 50.0, -100.0);
+        glVertex3f(0.0, 230.0, 0.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(140.0, 180.0, -100.0);
     glEnd();
 
+    glBegin(GL_TRIANGLES);//atap depan
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(0.0, 230.0, 0.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_LINE_LOOP);//garis atap belakang
+         glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(0.0, 230.0, 0.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap kanan
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(0.0, 230.0, 0.0);
+    glEnd();
+
+    glBegin(GL_LINE_LOOP); // garis atap kanan
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(0.0, 230.0, 0.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap kiri
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(0.0, 230.0, 0.0);
+    glEnd();
+
+    glBegin(GL_LINE_LOOP); // garis atap kiri
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(0.0, 230.0, 0.0);
+    glEnd();
 }
+
 void pintukampus(void) {
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
@@ -1050,6 +1091,7 @@ void display(void) {
     redcarpet();
     rakdinding();
     LCD();
+    atap();
 
     glPopMatrix();
     glutSwapBuffers();
