@@ -996,32 +996,32 @@ void display(void) {
     jendela(230+17.5,-130,0);
 
     jendelabawah(0,0,0,5,5);
-    jendelabawah(17.5,0,0,0,0);
-    jendelabawah(0,-40,0,0,0);
-    jendelabawah(17.5,-40,0,0,0);
+    jendelabawah(17.5,0,0,3,3);
+    jendelabawah(0,-40,0,2,2);
+    jendelabawah(17.5,-40,0,4,4);
     jendelabawah(0,-85,0,0,0);
     jendelabawah(17.5,-85,0,0,0);
     jendelabawah(0,-130,0,0,0);
     jendelabawah(17.5,-130,0,0,0);
 
-    jendelabawah(50,0,20,0,0);
-    jendelabawah(50 + 17.5,0,20,0,0);
+    jendelabawah(50,0,20,2,2);
+    jendelabawah(50 + 17.5,0,20,2,2);
     jendelabawah(50,-40,20,0,0);
     jendelabawah(50 + 17.5,-40,20,0,0);
-    jendelabawah(50,-85,20,0,0);
-    jendelabawah(50 + 17.5,-85,20,0,0);
+    jendelabawah(50,-85,20,3,3);
+    jendelabawah(50 + 17.5,-85,20,3,3);
     jendelabawah(50,-130,20,0,0);
     jendelabawah(50 + 17.5,-130,20,0,0);
 
-    jendelabawah(105,0,40,0,0);
+    jendelabawah(105,0,40,2,2);
     jendelabawah(140,0,40,0,0);
     jendelabawah(105,-40,40,0,0);
     jendelabawah(140,-40,40,0,0);
     jendelabawah(105,-85,40,0,0);
     jendelabawah(140,-85,40,0,0);
 
-    jendelabawah(180,0,20,0,0);
-    jendelabawah(180+17.5,0,20,0,0);
+    jendelabawah(180,0,20,2,2);
+    jendelabawah(180+17.5,0,20,2,2);
     jendelabawah(180,-40,20,0,0);
     jendelabawah(180+17.5,-40,20,0,0);
     jendelabawah(180,-85,20,0,0);
@@ -1030,7 +1030,7 @@ void display(void) {
     jendelabawah(180+17.5,-130,20,0,0);
 
     jendelabawah(230,0,0,0,0);
-    jendelabawah(230+17.5,0,0,0,0);
+    jendelabawah(230+17.5,0,0,2,2);
     jendelabawah(230,-40,0,0,0);
     jendelabawah(230+17.5,-40,0,0,0);
     jendelabawah(230,-85,0,0,0);
