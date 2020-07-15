@@ -280,7 +280,36 @@ void menaraKiri(int xkiri, int xkanan, int xatas) {
         glVertex3f(-140.0, 0.0, 100);
         glVertex3f(-150.0 - xkiri +50, 0.0, 50);
     glEnd();
+    glBegin(GL_QUADS);//tembok kanan
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(140.0, 0.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 0.0, -100.0);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//garis tembok kanan
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(140.0, 0.0, 100.0);
+        glVertex3f(140.0, 180.0, 100.0);
+        glVertex3f(140.0, 180.0, -100.0);
+        glVertex3f(140.0, 0.0, -100.0);
+    glEnd();
+        glBegin(GL_QUADS);//tembok kiri
+        glColor3f(1.0f, 0.408f, 0.0f);
+        glVertex3f(-140.0, 0.0, 100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 0.0, -100.0);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//garis tembok kiri
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-140.0, 0.0, 100.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+        glVertex3f(-140.0, 180.0, -100.0);
+        glVertex3f(-140.0, 0.0, -100.0);
+    glEnd();
 }
+
 
 void menaraKanan(int xkiri, int xkanan, int xatas) {
     glBegin(GL_QUADS);
