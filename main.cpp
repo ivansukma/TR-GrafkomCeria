@@ -812,6 +812,167 @@ void atap(void) {
     glEnd();
 }
 
+void atapMenaraKiri(void) {
+    glBegin(GL_TRIANGLES);//atap depan
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 150.0);
+        glVertex3f(-210.0, 180.0, 150.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap depan
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 150.0);
+        glVertex3f(-210.0, 180.0, 150.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap belakang
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 50.0);
+        glVertex3f(-210.0, 180.0, 50.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap belakang
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 50.0);
+        glVertex3f(-210.0, 180.0, 50.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kanan 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 50.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 1
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 50.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kanan 2
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 150.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-160.0, 180.0, 150.0);
+        glVertex3f(-140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kiri 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-210.0, 180.0, 50.0);
+        glVertex3f(-230.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-210.0, 180.0, 50.0);
+        glVertex3f(-230.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kiri 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-210.0, 180.0, 150.0);
+        glVertex3f(-230.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(-190, 230.0, 100.0);
+        glVertex3f(-210.0, 180.0, 150.0);
+        glVertex3f(-230.0, 180.0, 100.0);
+    glEnd();
+}
+
+void atapMenaraKanan(void) {
+    glBegin(GL_TRIANGLES);//atap depan
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 150.0);
+        glVertex3f(210.0, 180.0, 150.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap depan
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 150.0);
+        glVertex3f(210.0, 180.0, 150.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap belakang
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 50.0);
+        glVertex3f(210.0, 180.0, 50.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap belakang
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 50.0);
+        glVertex3f(210.0, 180.0, 50.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kanan 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 50.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 1
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 50.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kanan 2
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 150.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(160.0, 180.0, 150.0);
+        glVertex3f(140.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kiri 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(210.0, 180.0, 50.0);
+        glVertex3f(230.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(210.0, 180.0, 50.0);
+        glVertex3f(230.0, 180.0, 100.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);//atap samping kiri 1
+        glColor3f(0.5f,0.5f,0.5f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(210.0, 180.0, 150.0);
+        glVertex3f(230.0, 180.0, 100.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);//garis atap samoing kanan 2
+        glColor3f(0.0f,0.0f,0.0f);
+        glVertex3f(190, 230.0, 100.0);
+        glVertex3f(210.0, 180.0, 150.0);
+        glVertex3f(230.0, 180.0, 100.0);
+    glEnd();
+}
+
+
 void pintukampus(void) {
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
@@ -1055,6 +1216,8 @@ void display(void) {
     interior(60,60,80);
     menaraKiri(60,60,80);
     menaraKanan(60,60,80);
+    atapMenaraKiri();
+    atapMenaraKanan();
     pembatasjendela(0,0,-5,0);
     pembatasjendela(0,0,35,0);
     pembatasjendela(0,0,80,0);
