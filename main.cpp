@@ -18,8 +18,8 @@ float xdiff = 0;
 float ydiff = 0;
 bool mousedown = false;
 int is_depth;
-int main (int argc, char **argv)
-{
+int main (int argc, char **argv) {
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(900, 900);
@@ -39,8 +39,7 @@ int main (int argc, char **argv)
     glutMainLoop();
     return 0;
 }
-void init(void)
-{
+void init(void){
     glClearColor(0.0, 1.0, 0.906, 0.0);
     glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
@@ -52,7 +51,7 @@ void init(void)
     glLineWidth(6.0f);
 }
 
-void interior(int xkiri, int xkanan, int xatas){
+void interior(int xkiri, int xkanan, int xatas) {
     glBegin(GL_QUADS);//garis depan rumah`
         glColor3f(1.0f, 0.408f, 0.0f);
         glVertex3f(-80.0 - xkiri, 0.0, 100.1);
@@ -235,10 +234,54 @@ glBegin(GL_LINE_LOOP);
         glVertex3f(40.0, 0.0, 140.1);
        glVertex3f(-20.0 - xkiri +40, 0.0, 140.1);
     glEnd();
-
 }
 
-void pembatasjendela(int x, int px, int y, int z){
+void menaraKiri(int xkiri, int xkanan, int xatas) {
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-170.0 - xkiri +20, 100.0 + xatas, 150);
+        glVertex3f(-160.0, 100.0 + xatas, 150);
+        glVertex3f(-160.0, 0.0, 150);
+        glVertex3f(-170.0 - xkiri +20, 0.0, 150);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-150.0 - xkiri +50, 100.0 + xatas, 150);
+        glVertex3f(-140.0, 100.0 + xatas, 100);
+        glVertex3f(-140.0, 0.0, 100);
+        glVertex3f(-150.0 - xkiri +50, 0.0, 150);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-220.0 - xkiri +50, 100.0 + xatas, 100);
+        glVertex3f(-210.0, 100.0 + xatas, 150);
+        glVertex3f(-210, 0.0, 150);
+        glVertex3f(-220.0 - xkiri +50, 0.0, 100);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-220.0 - xkiri +50, 100.0 + xatas, 100);
+        glVertex3f(-210.0, 100.0 + xatas, 50);
+        glVertex3f(-210.0, 0.0, 50);
+        glVertex3f(-220.0 - xkiri +50, 0.0, 100);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-170.0 - xkiri +20, 100.0 + xatas, 50);
+        glVertex3f(-160.0, 100.0 + xatas, 50);
+        glVertex3f(-160.0, 0.0, 50);
+        glVertex3f(-170.0 - xkiri +20, 0.0, 50);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-150.0 - xkiri +50, 100.0 + xatas, 50);
+        glVertex3f(-140.0, 100.0 + xatas, 100);
+        glVertex3f(-140.0, 0.0, 100);
+        glVertex3f(-150.0 - xkiri +50, 0.0, 50);
+    glEnd();
+}
+
+void pembatasjendela(int x, int px, int y, int z) {
     glBegin(GL_QUADS); //belakang
     glColor3f(113/255.0f,108/255.0f,98/255.0f);
     glVertex3f(-135.0 +x,140.0 -y,100.2 +z);
@@ -288,7 +331,7 @@ void pembatasjendela(int x, int px, int y, int z){
     glEnd();
 }
 
-void jalanrumah(void){
+void jalanrumah(void) {
     glBegin(GL_QUADS);//Jalan halaman Rumah
         glColor3f(0.2f, 0.2f, 0.2f);
         glVertex3f(-200.0, -3.0, -200.0);
@@ -309,7 +352,7 @@ void jalanrumah(void){
 
 }
 
-void atap(void){
+void atap(void) {
 
     glBegin(GL_TRIANGLES);//atap belakang
          glColor3f(0.165f,0.09f,0.004f);
@@ -327,7 +370,7 @@ void atap(void){
 
 }
 
-void papantulis(void){
+void papantulis(void) {
 glBegin(GL_QUADS);//Papan Tulis
         glColor3f(1.0f,1.0f,1.0f);
         glVertex3f(-30, 10.0, -98);
@@ -344,7 +387,8 @@ glBegin(GL_QUADS);//Papan Tulis
     glEnd();
 }
 
-void redcarpet(void){
+void redcarpet(void) {
+
 
 
 glBegin(GL_QUADS);// RED CARPET
@@ -362,7 +406,7 @@ glBegin(GL_QUADS);// RED CARPET
        glVertex3f(40, -1.0, -50);
     glEnd();
 }
-void pijakankaki(void){
+void pijakankaki(void) {
  glBegin(GL_QUADS); //Pijakan Kaki (belakang)
         glColor3f(0.165f,0.09f,0.004f);
         glVertex3f(-30, 0.0, -98);
@@ -422,7 +466,7 @@ void pijakankaki(void){
 
 }
 
-void rakdinding(void){
+void rakdinding(void) {
  glBegin(GL_QUADS);//Rak Dinding
     glColor3f(0.671f, 0.322f, 0.0f);
     glVertex3f(-30, 35.0, -50);
@@ -439,7 +483,7 @@ void rakdinding(void){
     glEnd();
 }
 
-void LCD(void){
+void LCD(void) {
 glBegin(GL_QUADS); //LCD Atas
         glColor3f(1.0f, 1.0f, 1.0f);
         glVertex3f(-10.0, 48.0, -7.0);
@@ -527,9 +571,7 @@ glBegin(GL_QUADS); //LCD Atas
 }
 
 
-void display(void)
-{
-
+void display(void) {
     if (is_depth)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     else
@@ -540,6 +582,7 @@ void display(void)
 
     jalanrumah();
     interior(60,60,80);
+    menaraKiri(60,60,80);
     pembatasjendela(0,0,-5,0);
     pembatasjendela(0,0,35,0);
     pembatasjendela(0,0,80,0);
@@ -574,6 +617,7 @@ void display(void)
     glPopMatrix();
     glutSwapBuffers();
 }
+
 void mouseMove(int x, int y) {
     if (mousedown) {
         yrot = x - xdiff;
@@ -614,8 +658,7 @@ tombol pada keyboard:
 "n" : rotasi ke kanan terhadap sumbu Z
 "5" : transparankan rumah
 */
-void keyboard(unsigned char key, int x, int y)
-{
+void keyboard(unsigned char key, int x, int y) {
     switch (key)
     {
     case 'a':
@@ -680,8 +723,7 @@ void keyboard(unsigned char key, int x, int y)
     }
     display();
 }
-void resize(int width, int height)
-{
+void resize(int width, int height) {
     if (height == 0) height = 1;
     glViewport(0, 0, width, height);
     glMatrixMode(GL_PROJECTION);
