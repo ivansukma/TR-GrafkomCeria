@@ -972,6 +972,79 @@ void atapMenaraKanan(void) {
     glEnd();
 }
 
+void setengahLingkaran(void) {
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 180.0, 140.0);
+        glVertex3f(20.0, 180.0, 140.0);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(40.0, 180.0, 140.0);
+        glVertex3f(20.0, 180.0, 140.0);
+        glVertex3f(20.0, 210.0, 140.0);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-40.0, 180.0, 140.0);
+        glVertex3f(-20.0, 180.0, 140.0);
+        glVertex3f(-20.0, 210.0, 140.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(40.0, 180.0, 140.0);
+        glVertex3f(-40.0, 180.0, 140.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 120.0);
+        glVertex3f(-40.0, 180.0, 120.0);
+        glVertex3f(-40.0, 180.0, 140.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 120.0);
+        glVertex3f(-40.0, 180.0, 120.0);
+        glVertex3f(-40.0, 180.0, 140.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(20.0, 210.0, 120.0);
+        glVertex3f(40.0, 180.0, 120.0);
+        glVertex3f(40.0, 180.0, 140.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(20.0, 210.0, 120.0);
+        glVertex3f(40.0, 180.0, 120.0);
+        glVertex3f(40.0, 180.0, 140.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 120.0);
+        glVertex3f(20.0, 210.0, 120.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 140.0);
+        glVertex3f(-20.0, 210.0, 120.0);
+        glVertex3f(20.0, 210.0, 120.0);
+    glEnd();
+}
 
 void pintukampus(void) {
     glBegin(GL_QUADS);//pintu kampus kiri
@@ -1337,6 +1410,7 @@ void display(void) {
     rakdinding();
     LCD();
     atap();
+    setengahLingkaran();
 
     glPopMatrix();
     glutSwapBuffers();
