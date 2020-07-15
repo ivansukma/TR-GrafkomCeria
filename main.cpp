@@ -40,7 +40,7 @@ int main (int argc, char **argv) {
     return 0;
 }
 void init(void){
-    glClearColor(0.0, 1.0, 0.906, 0.0);
+    glClearColor(1.0, 0.412, 0.0, 0.0);
     glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);
