@@ -564,6 +564,22 @@ void atap(void) {
     glEnd();
 
 }
+void pintukampus(void) {
+glBegin(GL_QUADS);//pintu kampus
+        glColor3f(0.702f,0.29f,0.0f);
+        glVertex3f(-18, 1.0, 141.1);
+        glVertex3f(-18, 40.0, 141.1);
+        glVertex3f(18, 40.0, 141.1);
+        glVertex3f(18, 1.0, 141.1);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//garis pintu
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-18, 1.0, 141.1);
+        glVertex3f(-18, 40.0, 141.1);
+        glVertex3f(18, 40.0, 141.1);
+        glVertex3f(18, 1.0, 141.1);
+    glEnd();
+}
 
 void papantulis(void) {
 glBegin(GL_QUADS);//Papan Tulis
@@ -843,7 +859,7 @@ void display(void) {
         ISI KAMPUS
 
     */
-
+    pintukampus();
     papantulis();
     pijakankaki();
     redcarpet();
