@@ -414,7 +414,17 @@ void pembatasjendela(int x, int px, int y, int z) {
 void jendela (int x, int y, int z){
 glLineWidth(2.0);
 
-glBegin(GL_POLYGON); //kotak jendela
+
+glBegin(GL_LINE_LOOP); //garis jendela luar
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-131.0 +x, 147.5 +y, 100.9 +z);
+glVertex3f(-117.0 +x, 147.5 +y, 100.9 +z);
+glVertex3f(-117.0 +x, 172.5 +y, 100.9 +z);
+glVertex3f(-131.0 +x, 172.5 +y, 100.9 +z);
+glEnd();
+
+
+glBegin(GL_POLYGON); //kotak pinggir jendela
 glColor3f(1.0,1.0,1.0);
 glVertex3f(-130.0 +x, 150.0 +y, 100.9 +z);
 glVertex3f(-118.0 +x, 150.0 +y, 100.9 +z);
@@ -522,6 +532,121 @@ glVertex3f(-118.0 +x, 165.0 +y, 101.0 +z);
 glVertex3f(-118.0 +x, 160.0 +y, 101.0 +z);
 glVertex3f(-122.0 +x, 160.0 +y, 101.0 +z);
 glEnd();
+
+
+}
+
+void jendelabawah(int x, int y, int z, int a, int b){
+/*bagian bawah*/
+
+glBegin(GL_LINES); //garis pemisah
+glLineWidth(5.0);
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-130.0 +x, 160.0 +y, 101.2 +z);
+glVertex3f(-118.0 +x, 160.0 +y, 101.2 +z);
+glEnd();
+
+
+glBegin(GL_POLYGON); //isikotakjendela kiri
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-130.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-126.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+glBegin(GL_POLYGON); //isikotakjendela tengah
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-126.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-122.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+glBegin(GL_POLYGON); //isikotakjendela kanan
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-122.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-118.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+
+glBegin(GL_POLYGON); //isikotakjendela kiri
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
+glBegin(GL_POLYGON); //isikotakjendela tengah
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
+glBegin(GL_POLYGON); //isikotakjendela kanan
+glColor3f(91/255.0f,106/255.0f,104/255.0f);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
+
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela kiri
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-130.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-126.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela tengah
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-126.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-122.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela kanan
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-122.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-118.0 +x, 160.0 +y, 101.0 +z);
+glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glEnd();
+
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela kiri
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela tengah
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
+glBegin(GL_LINE_LOOP); //gariskotakjendela kanan
+glColor3f(1.0,1.0,1.0);
+glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
+glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glEnd();
+
 
 
 }
@@ -869,6 +994,51 @@ void display(void) {
     jendela(230+17.5,-85,0);
     jendela(230,-130,0);
     jendela(230+17.5,-130,0);
+
+    jendelabawah(0,0,0,0,0);
+    jendelabawah(17.5,0,0,0,0);
+    jendelabawah(0,-40,0,0,0);
+    jendelabawah(17.5,-40,0,0,0);
+    jendelabawah(0,-85,0,0,0);
+    jendelabawah(17.5,-85,0,0,0);
+    jendelabawah(0,-130,0,0,0);
+    jendelabawah(17.5,-130,0,0,0);
+
+    jendelabawah(50,0,20,0,0);
+    jendelabawah(50 + 17.5,0,20,0,0);
+    jendelabawah(50,-40,20,0,0);
+    jendelabawah(50 + 17.5,-40,20,0,0);
+    jendelabawah(50,-85,20,0,0);
+    jendelabawah(50 + 17.5,-85,20,0,0);
+    jendelabawah(50,-130,20,0,0);
+    jendelabawah(50 + 17.5,-130,20,0,0);
+
+    jendelabawah(105,0,40,0,0);
+    jendelabawah(140,0,40,0,0);
+    jendelabawah(105,-40,40,0,0);
+    jendelabawah(140,-40,40,0,0);
+    jendelabawah(105,-85,40,0,0);
+    jendelabawah(140,-85,40,0,0);
+
+    jendelabawah(180,0,20,0,0);
+    jendelabawah(180+17.5,0,20,0,0);
+    jendelabawah(180,-40,20,0,0);
+    jendelabawah(180+17.5,-40,20,0,0);
+    jendelabawah(180,-85,20,0,0);
+    jendelabawah(180+17.5,-85,20,0,0);
+    jendelabawah(180,-130,20,0,0);
+    jendelabawah(180+17.5,-130,20,0,0);
+
+    jendelabawah(230,0,0,0,0);
+    jendelabawah(230+17.5,0,0,0,0);
+    jendelabawah(230,-40,0,0,0);
+    jendelabawah(230+17.5,-40,0,0,0);
+    jendelabawah(230,-85,0,0,0);
+    jendelabawah(230+17.5,-85,0,0,0);
+    jendelabawah(230,-130,0,0,0);
+    jendelabawah(230+17.5,-130,0,0,0);
+
+
 
      /*
         ISI KAMPUS
