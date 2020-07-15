@@ -565,17 +565,32 @@ void atap(void) {
 
 }
 void pintukampus(void) {
-glBegin(GL_QUADS);//pintu kampus
+    glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(-18, 1.0, 141.1);
         glVertex3f(-18, 40.0, 141.1);
-        glVertex3f(18, 40.0, 141.1);
-        glVertex3f(18, 1.0, 141.1);
+        glVertex3f(0, 40.0, 141.1);
+        glVertex3f(0, 1.0, 141.1);
     glEnd();
-        glBegin(GL_LINE_LOOP);//garis pintu
+        glBegin(GL_LINE_LOOP);//garis pintu kiri
         glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-18, 1.0, 141.1);
         glVertex3f(-18, 40.0, 141.1);
+        glVertex3f(0, 40.0, 141.1);
+        glVertex3f(0, 1.0, 141.1);
+    glEnd();
+
+    glBegin(GL_QUADS);//pintu kampus kanan
+        glColor3f(0.702f,0.29f,0.0f);
+        glVertex3f(0, 1.0, 141.1);
+        glVertex3f(0, 40.0, 141.1);
+        glVertex3f(18, 40.0, 141.1);
+        glVertex3f(18, 1.0, 141.1);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//garis pintu kanan
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(0, 1.0, 141.1);
+        glVertex3f(0, 40.0, 141.1);
         glVertex3f(18, 40.0, 141.1);
         glVertex3f(18, 1.0, 141.1);
     glEnd();
