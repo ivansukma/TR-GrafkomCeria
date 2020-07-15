@@ -576,24 +576,24 @@ glBegin(GL_POLYGON); //isikotakjendela kiri
 glColor3f(91/255.0f,106/255.0f,104/255.0f);
 glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 glBegin(GL_POLYGON); //isikotakjendela tengah
 glColor3f(91/255.0f,106/255.0f,104/255.0f);
 glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 glBegin(GL_POLYGON); //isikotakjendela kanan
 glColor3f(91/255.0f,106/255.0f,104/255.0f);
 glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 
@@ -627,24 +627,24 @@ glBegin(GL_LINE_LOOP); //gariskotakjendela kiri
 glColor3f(1.0,1.0,1.0);
 glVertex3f(-130.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-130.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 glBegin(GL_LINE_LOOP); //gariskotakjendela tengah
 glColor3f(1.0,1.0,1.0);
 glVertex3f(-126.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-126.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 glBegin(GL_LINE_LOOP); //gariskotakjendela kanan
 glColor3f(1.0,1.0,1.0);
 glVertex3f(-122.0 +x, 155.0 +y, 101.0 +z +a);
 glVertex3f(-118.0 +x, 155.0 +y, 101.0 +z +a);
-glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +b);
-glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +b);
+glVertex3f(-118.0 +x, 150.0 +y, 101.0 +z +a +b);
+glVertex3f(-122.0 +x, 150.0 +y, 101.0 +z +a +b);
 glEnd();
 
 
@@ -995,7 +995,7 @@ void display(void) {
     jendela(230,-130,0);
     jendela(230+17.5,-130,0);
 
-    jendelabawah(0,0,0,0,0);
+    jendelabawah(0,0,0,5,5);
     jendelabawah(17.5,0,0,0,0);
     jendelabawah(0,-40,0,0,0);
     jendelabawah(17.5,-40,0,0,0);
