@@ -258,6 +258,7 @@ void menaraKiri(int xkiri, int xkanan, int xatas) {
         glVertex3f(-210, 0.0, 150);
         glVertex3f(-220.0 - xkiri +50, 0.0, 100);
     glEnd();
+
     glBegin(GL_QUADS);
         glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
         glVertex3f(-220.0 - xkiri +50, 100.0 + xatas, 100);
@@ -278,6 +279,52 @@ void menaraKiri(int xkiri, int xkanan, int xatas) {
         glVertex3f(-140.0, 100.0 + xatas, 100);
         glVertex3f(-140.0, 0.0, 100);
         glVertex3f(-150.0 - xkiri +50, 0.0, 50);
+    glEnd();
+}
+
+void menaraKanan(int xkiri, int xkanan, int xatas) {
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(160.0, 100.0 + xatas, 150);
+        glVertex3f(170.0 + xkanan - 20, 100.0 + xatas, 150);
+        glVertex3f(170.0 + xkanan - 20, 0.0, 150);
+        glVertex3f(160.0, 0.0, 150);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(140.0, 100.0 + xatas, 100);
+        glVertex3f(150.0 + xkanan - 50, 100.0 + xatas, 150);
+        glVertex3f(150.0 + xkanan - 50, 0.0, 150);
+        glVertex3f(140.0, 0.0, 100);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(210.0, 100.0 + xatas, 150);
+        glVertex3f(220.0 + xkanan - 50, 100.0 + xatas, 100);
+        glVertex3f(220.0 + xkanan - 50, 0.0, 100);
+        glVertex3f(210.0, 0.0, 150);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(160.0, 100.0 + xatas, 50);
+        glVertex3f(170.0 + xkanan - 20, 100.0 + xatas, 50);
+        glVertex3f(170.0 + xkanan - 20, 0.0, 50);
+        glVertex3f(160.0, 0.0, 50);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(140.0, 100.0 + xatas, 100);
+        glVertex3f(150.0 + xkanan - 50, 100.0 + xatas, 50);
+        glVertex3f(150.0 + xkanan - 50, 0.0, 50);
+        glVertex3f(140.0, 0.0, 100);
+    glEnd();
+    glBegin(GL_QUADS);
+        glColor3f(161/255.0f, 98/255.0f, 52/255.0f);
+        glVertex3f(210.0, 100.0 + xatas, 50);
+        glVertex3f(220.0 + xkanan - 50, 100.0 + xatas, 100);
+        glVertex3f(220.0 + xkanan - 50, 0.0, 100);
+        glVertex3f(210.0, 0.0, 50);
     glEnd();
 }
 
@@ -698,6 +745,7 @@ void display(void) {
     jalanrumah();
     interior(60,60,80);
     menaraKiri(60,60,80);
+    menaraKanan(60,60,80);
     pembatasjendela(0,0,-5,0);
     pembatasjendela(0,0,35,0);
     pembatasjendela(0,0,80,0);
