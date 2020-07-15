@@ -767,6 +767,47 @@ void display(void) {
     pembatasjendela(230,0,80,0);
 
     jendela(0,0,0);
+    jendela(17.5,0,0);
+    jendela(0,-40,0);
+    jendela(17.5,-40,0);
+    jendela(0,-85,0);
+    jendela(17.5,-85,0);
+    jendela(0,-130,0);
+    jendela(17.5,-130,0);
+
+    jendela(50,0,20);
+    jendela(50 + 17.5,0,20);
+    jendela(50,-40,20);
+    jendela(50 + 17.5,-40,20);
+    jendela(50,-85,20);
+    jendela(50 + 17.5,-85,20);
+    jendela(50,-130,20);
+    jendela(50 + 17.5,-130,20);
+
+    jendela(105,0,40);
+    jendela(140,0,40);
+    jendela(105,-40,40);
+    jendela(140,-40,40);
+    jendela(105,-85,40);
+    jendela(140,-85,40);
+
+    jendela(180,0,20);
+    jendela(180+17.5,0,20);
+    jendela(180,-40,20);
+    jendela(180+17.5,-40,20);
+    jendela(180,-85,20);
+    jendela(180+17.5,-85,20);
+    jendela(180,-130,20);
+    jendela(180+17.5,-130,20);
+
+    jendela(230,0,0);
+    jendela(230+17.5,0,0);
+    jendela(230,-40,0);
+    jendela(230+17.5,-40,0);
+    jendela(230,-85,0);
+    jendela(230+17.5,-85,0);
+    jendela(230,-130,0);
+    jendela(230+17.5,-130,0);
 
      /*
         ISI KAMPUS
