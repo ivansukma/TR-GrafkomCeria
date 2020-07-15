@@ -1567,6 +1567,21 @@ void display(void) {
     jendela(-60,-120,50.0); //menara kiri
     jendelabawah(-60,-120,50.0,0,0);
 
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,0,0);
+    pembatasjendela(300,0,-10,50);
+
+    jendela(310,-33,50.0); //menara kanan
+    jendelabawah(310,-33,50.0,0,0);
+    pembatasjendela(300,0,30,50);
+
+    jendela(310,-75,50.0); //menara kanan
+    jendelabawah(310,-75,50.0,0,0);
+    pembatasjendela(300,0,75,50);
+
+    jendela(310,-120,50.0); //menara kanan
+    jendelabawah(310,-120,50.0,0,0);
+
      /*
         ISI KAMPUS
 
