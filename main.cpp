@@ -1085,6 +1085,120 @@ void setengahLingkaran(void) {
     glEnd();
 }
 
+void menaraJam(void) {
+    glBegin(GL_QUADS);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 210.0, 137.0);
+        glVertex3f(10.0, 250.0, 137.0);
+        glVertex3f(10.0, 250.0, 123.0);
+        glVertex3f(10.0, 210.0, 123.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 210.0, 137.0);
+        glVertex3f(10.0, 250.0, 137.0);
+        glVertex3f(10.0, 250.0, 123.0);
+        glVertex3f(10.0, 210.0, 123.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(-10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 250.0, 137.0);
+        glVertex3f(-10.0, 250.0, 123.0);
+        glVertex3f(-10.0, 210.0, 123.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 250.0, 137.0);
+        glVertex3f(-10.0, 250.0, 123.0);
+        glVertex3f(-10.0, 210.0, 123.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 250.0, 137.0);
+        glVertex3f(10.0, 250.0, 137.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 210.0, 137.0);
+        glVertex3f(-10.0, 250.0, 137.0);
+        glVertex3f(10.0, 250.0, 137.0);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 210.0, 123.0);
+        glVertex3f(-10.0, 210.0, 123.0);
+        glVertex3f(-10.0, 250.0, 123.0);
+        glVertex3f(10.0, 250.0, 123.0);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 210.0, 123.0);
+        glVertex3f(-10.0, 210.0, 123.0);
+        glVertex3f(-10.0, 250.0, 123.0);
+        glVertex3f(10.0, 250.0, 123.0);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 250.0, 137);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 137);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 250.0, 137);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 137);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 123);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 123);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(-10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 137);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(-10.0, 250.0, 137);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+        glColor3f(0.5f, 1.0f, 0.5f);
+        glVertex3f(10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(10.0, 250.0, 137);
+    glEnd();
+    glBegin(GL_LINE_LOOP);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(10.0, 250.0, 123);
+        glVertex3f(0.0, 275.0, (137+123)/2);
+        glVertex3f(10.0, 250.0, 137);
+    glEnd();
+}
+
 void pintukampus(void) {
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
@@ -1150,6 +1264,7 @@ glBegin(GL_QUADS);// RED CARPET
        glVertex3f(60, -3.0, -50);
     glEnd();
 }
+
 void pijakankaki(void) {
  glBegin(GL_QUADS); //Pijakan Kaki (belakang)
         glColor3f(0.165f,0.09f,0.004f);
@@ -1330,6 +1445,7 @@ void display(void) {
     menaraKanan(60,60,80);
     atapMenaraKiri();
     atapMenaraKanan();
+    menaraJam();
     pembatasjendela(0,0,-5,0);
     pembatasjendela(0,0,35,0);
     pembatasjendela(0,0,80,0);
