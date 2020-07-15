@@ -494,22 +494,22 @@ glEnd();
 }
 
 void jalanrumah(void) {
-    glBegin(GL_QUADS);//Jalan halaman Rumah
+    glBegin(GL_QUADS);//Jalan Halaman kampus
         glColor3f(0.2f, 0.2f, 0.2f);
-        glVertex3f(-200.0, -3.0, -200.0);
+        glVertex3f(-400.0, -10.0, -400.0);
         glColor3f(0.4f, 0.4f, 0.4f);
-        glVertex3f(-200.0, -3.0, 200.0);
+        glVertex3f(-400.0, -10.0, 400.0);
         glColor3f(0.6f, 0.6f, 0.6f);
-        glVertex3f(200.0, -3.0, 200.0);
+        glVertex3f(400.0, -10.0, 400.0);
         glColor3f(0.8f, 0.8f, 0.8f);
-        glVertex3f(200.0, -3.0, -200.0);
+        glVertex3f(400.0, -10.0, -400.0);
     glEnd();
-     glBegin(GL_LINE_LOOP);//Garis Halaman rumah
+     glBegin(GL_LINE_LOOP);//Garis Halaman kampus
        glColor3f(0.0f, 0.0f, 0.0f);
-       glVertex3f(-200.0, -3.0, -200.0);
-       glVertex3f(-200.0, -3.0, 200.0);
-       glVertex3f(200.0, -3.0, 200.0);
-       glVertex3f(200.0, -3.0, -200.0);
+       glVertex3f(-400.0, -10.0, -400.0);
+       glVertex3f(-400.0, -10.0, 400.0);
+       glVertex3f(400.0, -10.0, 400.0);
+       glVertex3f(400.0, -10.0, -400.0);
     glEnd();
 
 }
