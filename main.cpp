@@ -1087,7 +1087,7 @@ void setengahLingkaran(void) {
 
 void menaraJam(void) {
     glBegin(GL_QUADS);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 210.0, 137.0);
         glVertex3f(10.0, 250.0, 137.0);
         glVertex3f(10.0, 250.0, 123.0);
@@ -1102,7 +1102,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_QUADS);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(-10.0, 210.0, 137.0);
         glVertex3f(-10.0, 250.0, 137.0);
         glVertex3f(-10.0, 250.0, 123.0);
@@ -1117,7 +1117,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_QUADS);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 210.0, 137.0);
         glVertex3f(-10.0, 210.0, 137.0);
         glVertex3f(-10.0, 250.0, 137.0);
@@ -1132,7 +1132,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_QUADS);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 210.0, 123.0);
         glVertex3f(-10.0, 210.0, 123.0);
         glVertex3f(-10.0, 250.0, 123.0);
@@ -1147,7 +1147,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_TRIANGLES);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 250.0, 137);
         glVertex3f(0.0, 275.0, (137+123)/2);
         glVertex3f(-10.0, 250.0, 137);
@@ -1160,7 +1160,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_TRIANGLES);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 250.0, 123);
         glVertex3f(0.0, 275.0, (137+123)/2);
         glVertex3f(-10.0, 250.0, 123);
@@ -1173,7 +1173,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_TRIANGLES);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(-10.0, 250.0, 123);
         glVertex3f(0.0, 275.0, (137+123)/2);
         glVertex3f(-10.0, 250.0, 137);
@@ -1186,7 +1186,7 @@ void menaraJam(void) {
     glEnd();
 
     glBegin(GL_TRIANGLES);
-        glColor3f(0.5f, 1.0f, 0.5f);
+        glColor3f(0.0f, 0.851f, 0.714f);
         glVertex3f(10.0, 250.0, 123);
         glVertex3f(0.0, 275.0, (137+123)/2);
         glVertex3f(10.0, 250.0, 137);
