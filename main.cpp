@@ -16,8 +16,23 @@ float xrot = 0;
 float yrot = 0;
 float xdiff = 0;
 float ydiff = 0;
+float angkarotasi = 0;
 bool mousedown = false;
 int is_depth;
+
+void timer(int value)
+{
+
+    if (angkarotasi == 0){
+        angkarotasi = 45;
+    } else if (angkarotasi == 45){
+        angkarotasi = 0;
+    }
+
+	glutPostRedisplay();
+	glutTimerFunc(1000, timer, 0);
+}
+
 int main (int argc, char **argv) {
 
     glutInit(&argc, argv);
@@ -25,6 +40,7 @@ int main (int argc, char **argv) {
     glutInitWindowSize(900, 900);
     glutInitWindowPosition(40, 40);
     glutCreateWindow("Tugas Rancang Grafkom Kampus Inggris Imperial College");
+    glutTimerFunc(1, timer, 0);
     init();
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -1232,6 +1248,8 @@ void pintukampus(void) {
         glVertex3f(0, 1.0, 141.1);
     glEnd();
 
+    glPushMatrix();
+    glRotatef(angkarotasi,0.0,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kanan
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(0, 1.0, 141.1);
@@ -1239,6 +1257,11 @@ void pintukampus(void) {
         glVertex3f(18, 40.0, 141.1);
         glVertex3f(18, 1.0, 141.1);
     glEnd();
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glRotatef(angkarotasi,0.0,1.0,0.0);
         glBegin(GL_LINE_LOOP);//garis pintu kanan
         glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(0, 1.0, 141.1);
@@ -1246,6 +1269,8 @@ void pintukampus(void) {
         glVertex3f(18, 40.0, 141.1);
         glVertex3f(18, 1.0, 141.1);
     glEnd();
+
+    glPopMatrix();
 }
 
 void papantulis(void) {
