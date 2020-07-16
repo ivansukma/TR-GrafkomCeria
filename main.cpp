@@ -1557,18 +1557,18 @@ void display(void) {
     pembatasjendela(-68,0,-10,50);
 
     jendela(-60,-33,50.0); //menara kiri
-    jendelabawah(-60,-33,50.0,0,0);
+    jendelabawah(-60,-33,50.0,4,4);
     pembatasjendela(-68,0,30,50);
 
     jendela(-60,-75,50.0); //menara kiri
-    jendelabawah(-60,-75,50.0,0,0);
+    jendelabawah(-60,-75,50.0,3,3);
     pembatasjendela(-68,0,75,50);
 
     jendela(-60,-120,50.0); //menara kiri
     jendelabawah(-60,-120,50.0,0,0);
 
     jendela(310,4,50.0); //menara kanan
-    jendelabawah(310,4,50.0,0,0);
+    jendelabawah(310,4,50.0,3,3);
     pembatasjendela(300,0,-10,50);
 
     jendela(310,-33,50.0); //menara kanan
