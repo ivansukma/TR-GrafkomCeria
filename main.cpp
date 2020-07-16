@@ -39,6 +39,24 @@ int main (int argc, char **argv) {
     glutMainLoop();
     return 0;
 }
+void jam(void){
+        glBegin(GL_QUADS);//pintu kampus kiri
+        glColor3f(1.0f,1.0f,1.0f);
+        glVertex3f(-5, 250.0, 138);
+        glVertex3f(-5, 240.0, 138);
+        glVertex3f(5, 240.0, 138);
+        glVertex3f(5, 250.0, 138);
+    glEnd();
+        glBegin(GL_LINE_LOOP);//garis pintu kiri
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glVertex3f(-5, 250.0, 138);
+        glVertex3f(-5, 240.0, 138);
+        glVertex3f(5, 240.0, 138);
+        glVertex3f(5, 250.0, 138);
+    glEnd();
+
+}
+
 void init(void){
     glClearColor(1.0, 0.412, 0.0, 0.0);
     glEnable(GL_DEPTH_TEST);
@@ -1957,7 +1975,7 @@ void display(void) {
     glPushMatrix();
     glRotatef(xrot, 1, 0, 0);
     glRotatef(yrot, 0, 1, 0);
-
+    jam();
     jalanrumah();
     interior(60,60,80);
     menaraKiri(60,60,80);
