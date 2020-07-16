@@ -2186,6 +2186,71 @@ void display(void) {
     jendelabawah(-60,-120,50.0,0,0);
     glPopMatrix();
 
+    /*menara kanan bagian miring kiri*/
+    glPushMatrix();
+    glTranslatef(221.5,0,-100);
+    glRotatef(-68,0.0,1.0,0.0);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,2,2);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(221.5,-40,-100);
+    glRotatef(-68,0.0,1.0,0.0);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,2,2);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(221.5,-85,-100);
+    glRotatef(-68,0.0,1.0,0.0);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,3,3);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(221.5,0,-100);
+    glRotatef(-68,0.0,1.0,0.0);
+    jendela(310,-120,50.0); //menara kanan
+    jendelabawah(310,-120,50.0,0,0);
+    glPopMatrix();
+
+    /*menara kanan bagian miring kanan*/
+
+    glPushMatrix();
+    glRotatef(68.0,0.0,1.0,0.0);
+    glTranslatef(-218,0,100);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,3,3);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glRotatef(68.0,0.0,1.0,0.0);
+    glTranslatef(-218,-40,100);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,2,2);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glRotatef(68.0,0.0,1.0,0.0);
+    glTranslatef(-218,-85,100);
+    jendela(310,4,50.0); //menara kanan
+    jendelabawah(310,4,50.0,0,0);
+    pembatasjendela(300,0,-10,50);
+    glPopMatrix();
+
+    glPushMatrix();
+    glRotatef(68.0,0.0,1.0,0.0);
+    glTranslatef(-218,0,100);
+    jendela(310,-120,50.0); //menara kanan
+    jendelabawah(310,-120,50.0,0,0);
+    glPopMatrix();
+
      /*
         ISI KAMPUS
 
