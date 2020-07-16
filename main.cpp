@@ -1549,6 +1549,64 @@ glBegin(GL_QUADS);
 
 }
 
+void lampugantung(void){
+
+    glBegin(GL_LINES);
+    glColor3f(1.0,1.0,1.0);
+    glVertex3f(0.375, 8.25, 49.5);               //tali
+    glVertex3f(0.375, 11.0, 49.5);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glColor3f(1.0,1.0,1.0);
+    glVertex3f(0.375, 11.0, 49.5);               //tali
+    glVertex3f(3.0, 11.0, 49.5);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 0.0);
+	glVertex3f(0, 8.25, 50.0);
+	glVertex3f(0.75, 8.25, 50.0);                //lampu atas
+	glVertex3f(0.75, 8.25, 49.0);
+	glVertex3f(0, 8.25, 49.0);
+	glEnd();
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 0.0);
+	glVertex3f(0, 6.5, 50.0);
+	glVertex3f(0.75, 6.5, 50.0);                //lampu depan
+	glVertex3f(0.75, 8.25, 50.0);
+	glVertex3f(0, 8.25, 50.0);
+	glEnd();
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 0.0);
+	glVertex3f(0, 6.5, 49.0);
+	glVertex3f(0.75, 6.5, 49.0);                //lampu belakang
+	glVertex3f(0.75, 8.25, 49.0);
+	glVertex3f(0, 8.25, 49.0);
+	glEnd();
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 0.0);
+	glVertex3f(0, 6.5, 50.0);
+	glVertex3f(0, 6.5, 49.0);                //lampu kiri
+	glVertex3f(0, 8.25, 49.0);
+	glVertex3f(0, 8.25, 50.0);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 0.0);
+	glVertex3f(0.75, 6.5, 50.0);
+	glVertex3f(0.75, 6.5, 49.0);                //lampu kanan
+	glVertex3f(0.75, 8.25, 49.0);
+	glVertex3f(0.75, 8.25, 50.0);
+	glEnd();
+
+}
+
+
 void display(void) {
     if (is_depth)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -1738,6 +1796,13 @@ void display(void) {
     kakimeja(0,0,6);
     kakimeja(3,0,6);
     tutupmeja();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(-125,20,220);
+    glScalef(5,5,5);
+    glRotatef(180,0.0,1.0,0.0);
+    lampugantung();
     glPopMatrix();
 
 
