@@ -42,6 +42,7 @@ void timer(int value)
 
 int main (int argc, char **argv) {
 
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(900, 900);
@@ -422,7 +423,6 @@ void menaraKiri(int xkiri, int xkanan, int xatas) {
         glVertex3f(-150.0 - xkiri +50, 0.0, 50);
     glEnd();
 }
-
 
 void menaraKanan(int xkiri, int xkanan, int xatas) {
     glBegin(GL_QUADS);
@@ -1240,6 +1240,14 @@ void menaraJam(void) {
 }
 
 void pintukampus(void) {
+    glBegin(GL_QUADS); //belakang pintu
+        glColor3f(1.0f, 1.0f, 1.0f);
+        glVertex3f(-18, 2.0, 141.05);
+        glVertex3f(18, 2.0, 141.05);
+        glVertex3f(18, 41.0, 141.05);
+        glVertex3f(-18, 41.0, 141.05);
+    glEnd();
+
     glPushMatrix();
     glTranslatef(angkatranslasi2,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kiri
@@ -1526,6 +1534,7 @@ void LCD(void) {
 
 void kakikursi(int px, int py, int pz){
 
+
     glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
 	glVertex3f(0 + px, -10.0 +py, 50.0 -pz);
@@ -1631,7 +1640,6 @@ void tutupmeja(void){
 	glVertex3f(0 , -5.0, 43.0 );
 	glEnd();
 }
-
 
 void penutupkursi(void){
 glBegin(GL_QUADS);
@@ -2421,6 +2429,7 @@ tombol pada keyboard:
 "5" : transparankan rumah
 */
 void keyboard(unsigned char key, int x, int y) {
+
     switch (key)
     {
     case 'a':
