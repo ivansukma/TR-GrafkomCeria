@@ -16,24 +16,24 @@ float xrot = 0;
 float yrot = 0;
 float xdiff = 0;
 float ydiff = 0;
-float angkarotasi = 0;
-float angkarotasi2 = 0;
+float angkatranslasi = 0;
+float angkatranslasi2 = 0;
 bool mousedown = false;
 int is_depth;
 
 void timer(int value)
 {
 
-    if (angkarotasi == 0){
-        angkarotasi = 17;
-    } else if (angkarotasi == 17){
-        angkarotasi = 0;
+    if (angkatranslasi == 0){
+        angkatranslasi = 17;
+    } else if (angkatranslasi == 17){
+        angkatranslasi = 0;
     }
 
-    if (angkarotasi2 == 0){
-        angkarotasi2 = -17;
-    } else if (angkarotasi2 == -17){
-        angkarotasi2 = 0;
+    if (angkatranslasi2 == 0){
+        angkatranslasi2 = -17;
+    } else if (angkatranslasi2 == -17){
+        angkatranslasi2 = 0;
     }
 
 	glutPostRedisplay();
@@ -1241,7 +1241,7 @@ void menaraJam(void) {
 
 void pintukampus(void) {
     glPushMatrix();
-    glTranslatef(angkarotasi2,1.0,0.0);
+    glTranslatef(angkatranslasi2,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(-18, 1.0, 141.1);
@@ -1259,7 +1259,7 @@ void pintukampus(void) {
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(angkarotasi,1.0,0.0);
+    glTranslatef(angkatranslasi,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kanan
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(0, 1.0, 141.1);
@@ -1271,7 +1271,7 @@ void pintukampus(void) {
 
 
     glPushMatrix();
-    glTranslatef(angkarotasi,1.0,0.0);
+    glTranslatef(angkatranslasi,1.0,0.0);
         glBegin(GL_LINE_LOOP);//garis pintu kanan
         glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(0, 1.0, 141.1);
