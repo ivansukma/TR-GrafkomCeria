@@ -37,7 +37,7 @@ void timer(int value)
     }
 
 	glutPostRedisplay();
-	glutTimerFunc(1000, timer, 0);
+	glutTimerFunc(1000, timer, 10);
 }
 
 int main (int argc, char **argv) {
@@ -1241,7 +1241,7 @@ void menaraJam(void) {
 
 void pintukampus(void) {
     glPushMatrix();
-    glRotatef(angkarotasi2,0.0,1.0,0.0);
+    glTranslatef(angkarotasi2,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(-18, 1.0, 141.1);
