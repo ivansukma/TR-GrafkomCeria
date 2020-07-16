@@ -1429,6 +1429,125 @@ glBegin(GL_QUADS); //LCD Atas
     glEnd();
 }
 
+void kakikursi(int px, int py, int pz){
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 + px, -10.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki kursi depan
+	glVertex3f(1 +px, -5.0 +py, 50.0 -pz);
+	glVertex3f(0+px, -5.0 +py, 50.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);                //kaki kursi belakang
+	glVertex3f(1 +px, -5.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -5.0 +py, 49.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 50.0 -pz);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);                //kaki kursi kiri
+	glVertex3f(0 +px, -5.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -5.0 +py, 50.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(1 +px, -5.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki kursi kanan
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(1 +px, -5.0 +py, 49.0 -pz);
+	glEnd();
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki kursi bawah
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);
+	glEnd();
+
+}
+void bantalkursi(void){
+    glBegin(GL_QUADS);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3f(0 , -5.0, 50.0 );
+	glVertex3f(4 , -5.0, 50.0 );
+	glVertex3f(4 , -5.0, 46.0 );
+	glVertex3f(0 , -5.0, 46.0 );
+	glEnd();
+
+}
+
+void kakimeja(int px, int py, int pz){
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 + px, -10.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki meja depan
+	glVertex3f(1 +px, -5.0 +py, 50.0 -pz);
+	glVertex3f(0+px, -5.0 +py, 50.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);                //kaki meja belakang
+	glVertex3f(1 +px, -5.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -5.0 +py, 49.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 50.0 -pz);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);                //kaki meja kiri
+	glVertex3f(0 +px, -5.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -5.0 +py, 50.0 -pz);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(1 +px, -5.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki meja kanan
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(1 +px, -5.0 +py, 49.0 -pz);
+	glEnd();
+
+    glBegin(GL_QUADS);
+	glColor3f(1.0, 1.0, 1.0);
+	glVertex3f(0 +px, -10.0 +py, 50.0 -pz);
+	glVertex3f(1 +px, -10.0 +py, 50.0 -pz);                //kaki meja bawah
+	glVertex3f(1 +px, -10.0 +py, 49.0 -pz);
+	glVertex3f(0 +px, -10.0 +py, 49.0 -pz);
+	glEnd();
+
+
+}
+
+void tutupmeja(void){
+    glBegin(GL_QUADS);
+	glColor3f(0.5, 0.9, 0.0);
+	glVertex3f(0 , -5.0, 50.0 );
+	glVertex3f(4 , -5.0, 50.0 );
+	glVertex3f(4 , -5.0, 43.0 );
+	glVertex3f(0 , -5.0, 43.0 );
+	glEnd();
+}
+
+
+void penutupkursi(void){
+glBegin(GL_QUADS);
+	glColor3f(1.0, 0.0, 0.0);
+	glVertex3f(0 , 0.0, 50.0 );
+	glVertex3f(1 , 0.0, 50.0 );
+	glVertex3f(1 , 0.0, 46.0 );
+	glVertex3f(0 , 0.0, 46.0 );
+	glEnd();
+
+}
 
 void display(void) {
     if (is_depth)
@@ -1594,6 +1713,21 @@ void display(void) {
     LCD();
     atap();
     setengahLingkaran();
+
+    //kursi
+    glPushMatrix();
+	glTranslated(-240,47,-20);
+	glScalef(5,5,5);
+	glRotatef(90,0.0,1.0,0.0);
+    kakikursi(0,0,0);
+    kakikursi(3,0,0);
+    kakikursi(0,0,3);
+    kakikursi(3,0,3);
+    bantalkursi();
+    kakikursi(0,5,0);
+    kakikursi(0,5,3);
+    penutupkursi();
+    glPopMatrix();
 
     glPopMatrix();
     glutSwapBuffers();
