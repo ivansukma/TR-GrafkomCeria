@@ -17,6 +17,7 @@ float yrot = 0;
 float xdiff = 0;
 float ydiff = 0;
 float angkarotasi = 0;
+float angkarotasi2 = 0;
 bool mousedown = false;
 int is_depth;
 
@@ -24,9 +25,15 @@ void timer(int value)
 {
 
     if (angkarotasi == 0){
-        angkarotasi = 45;
-    } else if (angkarotasi == 45){
+        angkarotasi = 17;
+    } else if (angkarotasi == 17){
         angkarotasi = 0;
+    }
+
+    if (angkarotasi2 == 0){
+        angkarotasi2 = -17;
+    } else if (angkarotasi2 == -17){
+        angkarotasi2 = 0;
     }
 
 	glutPostRedisplay();
@@ -1233,6 +1240,8 @@ void menaraJam(void) {
 }
 
 void pintukampus(void) {
+    glPushMatrix();
+    glRotatef(angkarotasi2,0.0,1.0,0.0);
     glBegin(GL_QUADS);//pintu kampus kiri
         glColor3f(0.702f,0.29f,0.0f);
         glVertex3f(-18, 1.0, 141.1);
@@ -1247,6 +1256,7 @@ void pintukampus(void) {
         glVertex3f(0, 40.0, 141.1);
         glVertex3f(0, 1.0, 141.1);
     glEnd();
+    glPopMatrix();
 
     glPushMatrix();
     glRotatef(angkarotasi,0.0,1.0,0.0);
