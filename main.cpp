@@ -1241,7 +1241,7 @@ void menaraJam(void) {
 
 void pintukampus(void) {
     glBegin(GL_QUADS); //belakang pintu
-        glColor3f(1.0f, 1.0f, 1.0f);
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex3f(-18, 2.0, 141.05);
         glVertex3f(18, 2.0, 141.05);
         glVertex3f(18, 41.0, 141.05);
