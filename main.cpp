@@ -1362,102 +1362,102 @@ void rakdinding(void) {
 void LCD(void) {
     glBegin(GL_QUADS); //LCD Atas
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
     glEnd();
     glBegin(GL_LINE_LOOP);//GARIS Lcd Atas
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
     glEnd();
     glBegin(GL_QUADS); //LCD bawah
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(10.0, 40.0, -7.0);
-        glVertex3f(10.0, 40.0, 7.0);
-        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(10.0, 67.0, -7.0);
+        glVertex3f(10.0, 67.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
     glEnd();
   glBegin(GL_LINE_LOOP);//GARIS Lcd bawah
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(10.0, 40.0, -7.0);
-        glVertex3f(10.0, 40.0, 7.0);
-        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(10.0, 67.0, -7.0);
+        glVertex3f(10.0, 67.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
     glEnd();
     glBegin(GL_QUADS); //LCD kanan
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(10.0, 40.0, -7.0);
-        glVertex3f(10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(10.0, 67.0, -7.0);
+        glVertex3f(10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(10.0, 67.0, 7.0);
     glEnd();
   glBegin(GL_LINE_LOOP);//GARIS Lcd kanan
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(10.0, 40.0, -7.0);
-        glVertex3f(10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(10.0, 67.0, -7.0);
+        glVertex3f(10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(10.0, 67.0, 7.0);
     glEnd();
     glBegin(GL_QUADS); //LCD kiri
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
-        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
     glEnd();
   glBegin(GL_LINE_LOOP);//GARIS Lcd kiri
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
-        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
     glEnd();
     glBegin(GL_QUADS); //LCD depan
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(10.0, 48.0, -7.0);
-        glVertex3f(10.0, 40.0, -7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(10.0, 75.0, -7.0);
+        glVertex3f(10.0, 67.0, -7.0);
     glEnd();
       glBegin(GL_LINE_LOOP);//GARIS Lcd depan
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-10.0, 40.0, -7.0);
-        glVertex3f(-10.0, 48.0, -7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
-        glVertex3f(-10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, -7.0);
+        glVertex3f(-10.0, 75.0, -7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
     glEnd();
     glBegin(GL_QUADS); //LCD belakang
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-10.0, 40.0, 7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(10.0, 67.0, 7.0);
     glEnd();
       glBegin(GL_LINE_LOOP);//GARIS lcd belakang
     glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-10.0, 40.0, 7.0);
-        glVertex3f(-10.0, 48.0, 7.0);
-        glVertex3f(10.0, 48.0, 7.0);
-        glVertex3f(10.0, 40.0, 7.0);
+        glVertex3f(-10.0, 67.0, 7.0);
+        glVertex3f(-10.0, 75.0, 7.0);
+        glVertex3f(10.0, 75.0, 7.0);
+        glVertex3f(10.0, 67.0, 7.0);
     glEnd();
 
     glBegin(GL_QUADS); //LCD Tiang Bawah
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-5.0, 48.0, -3.5);
-        glVertex3f(5.0, 48.0, -3.5);
-        glVertex3f(5.0, 48.0, 3.5);
-        glVertex3f(-5.0, 48.0, 3.5);
+        glVertex3f(-5.0, 75.0, -3.5);
+        glVertex3f(5.0, 75.0, -3.5);
+        glVertex3f(5.0, 75.0, 3.5);
+        glVertex3f(-5.0, 75.0, 3.5);
     glEnd();
     glBegin(GL_LINE_LOOP); // Garis LCD Tiang Bawah
         glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-5.0, 48.0, -3.5);
-        glVertex3f(5.0, 48.0, -3.5);
-        glVertex3f(5.0, 48.0, 3.5);
-        glVertex3f(-5.0, 48.0, 3.5);
+        glVertex3f(-5.0, 75.0, -3.5);
+        glVertex3f(5.0, 75.0, -3.5);
+        glVertex3f(5.0, 75.0, 3.5);
+        glVertex3f(-5.0, 75.0, 3.5);
     glEnd();
     glBegin(GL_QUADS); //LCD Tiang Atas
         glColor3f(0.0f, 0.0f, 0.0f);
@@ -1475,15 +1475,15 @@ void LCD(void) {
     glEnd();
     glBegin(GL_QUADS); //LCD Tiang
         glColor3f(1.0f, 1.0f, 1.0f);
-        glVertex3f(-2.0, 48.0, 0);
-        glVertex3f(2.0, 48.0, 0);
+        glVertex3f(-2.0, 75.0, 0);
+        glVertex3f(2.0, 75.0, 0);
         glVertex3f(2.0, 180.0, 0);
         glVertex3f(-2.0, 180.0, 0);
     glEnd();
     glBegin(GL_LINE_LOOP); // Garis LCD Tiang
         glColor3f(0.0f, 0.0f, 0.0f);
-        glVertex3f(-2.0, 48.0, 0);
-        glVertex3f(2.0, 48.0, 0);
+        glVertex3f(-2.0, 75.0, 0);
+        glVertex3f(2.0, 75.0, 0);
         glVertex3f(2.0, 180.0, 0);
         glVertex3f(-2.0, 180.0, 0);
     glEnd();
