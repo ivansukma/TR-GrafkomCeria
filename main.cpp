@@ -47,7 +47,6 @@ void init(void){
 	glEnable(GL_LIGHT0);
     is_depth=1;
     glMatrixMode(GL_MODELVIEW);
-    glPointSize(20.0);
     glLineWidth(6.0f);
 }
 
