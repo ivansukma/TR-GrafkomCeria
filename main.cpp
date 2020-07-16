@@ -1729,6 +1729,18 @@ void display(void) {
     penutupkursi();
     glPopMatrix();
 
+    //meja
+    glPushMatrix();
+    glTranslated(-100,47,-200);
+    glScalef(5,5,5);
+    kakimeja(0,0,0);
+    kakimeja(3,0,0);
+    kakimeja(0,0,6);
+    kakimeja(3,0,6);
+    tutupmeja();
+    glPopMatrix();
+
+
     glPopMatrix();
     glutSwapBuffers();
 }
